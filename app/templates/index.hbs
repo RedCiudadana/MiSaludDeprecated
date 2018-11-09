@@ -1,16 +1,13 @@
-{{!-- Portfolio --}}
-{{#if model.config.useFrontPortfolioVisualization}}
-  <div class="container bg-white">
-    <div class="row">
-      <div class="col-12">
-        {{!-- Mujer {{input type="checkbox" name="Mujer" checked=esMujer change=(action "applyFilter" "esMujer")}} --}}
-      </div>
-    </div>
-    <div>
-      {{front-portfolio
-      profiles=model.profiles
-      onDidInsertElement=(action "applyFilter")
-      }}
-    </div>
-  </div>
-{{/if}}
+<div id="wrapper-slider">
+  {{!-- slider --}}
+  <img
+    src="{{rootURL}}/img/slider.png"
+    alt=""
+    width="100%"
+    class="mt-5"
+    id="start">
+  <img
+    src="{{rootURL}}/img/ambulance.png"
+    alt="Ambulancia"
+    class="ambulance animate-to-left">
+</div>

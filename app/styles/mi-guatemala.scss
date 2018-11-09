@@ -258,31 +258,17 @@ i {
     }
 }
 
-#animations {
-    width: 100px;
-    height: 100px;
-    background-color: red;
-    position: relative;
-    -webkit-animation-direction: normal; /* Safari 4.0 - 8.0 */
-    -webkit-animation-name: move-to-left; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 4s;    
-    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
-    -webkit-animation-iteration-count: 1; /* Safari 4.0 - 8.0 */
+.animate-to-left {
+    position: absolute;
     animation-direction: normal;
     animation-name: move-to-left;
-    animation-duration: 4s;
+    animation-duration: 10s;
     animation-fill-mode: forwards;
     animation-iteration-count: 1;
 }
 
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes move-to-left {
-    0%   {background-color:red; left:400px; top:0px;}
-    100% {background-color:red; left:0px; top:0px;}
-}
-
 /* Standard syntax */
-@keyframes move-to-right {
-    0%   {background-color:red; left:400px; top:0px;}
-    100% {background-color:red; left:0px; top:0px;}
+@keyframes move-to-left {
+    0%   {top: 41.5vw; right: 0%;}
+    100% {top: 41.5vw; right: 100%;}
 }

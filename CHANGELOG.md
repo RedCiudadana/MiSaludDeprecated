@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 ### Added
+- Added slider and ambulance image in index.hbs.
+- Added animation to ambulance image.
+
+## [0.4.3-merge] 2018-11-9 Merge of MiGuatemala
+### Added
 - Added comments in config/enviroment.js.
 
 ### Changed
