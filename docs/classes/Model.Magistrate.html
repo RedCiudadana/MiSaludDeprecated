@@ -1,0 +1,1049 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Model.Magistrate - MiGuatemala</title>
+    <meta name="description" content="MiGuatemala es una aplicación destinada a la transparencia en materia de funcionarios públicos.">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min-c9648fe24982602c2862e478522fc244.css">
+    <link rel="stylesheet" href="../assets/css/main-409eab3833b69a366656483ab9d2c06d.css" id="site_styles">
+    <link rel="stylesheet" href="../assets/css/custom-6737633e00d20544befe6a4082b321d1.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap-5ba37ad9163643c32251366754f08b2a.css">
+    <link rel="stylesheet" href="../assets/vendor/font-awesome/css/font-awesome.min-4083f5d376eb849a458cc790b53ba080.css">
+    <link rel="stylesheet" href="../assets/css/theme-a946b57167156ca03ef797c0a6a003d8.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700' rel='stylesheet' type='text/css'>
+    
+
+      <style>
+        body a {
+          color: #2cd3b4;
+        }
+        body a:hover {
+          color: #2cd3b4;
+          opacity: 0.5;
+        }
+        .navbar.navbar-default .navbar-nav> li> a:focus, .navbar.navbar-default .navbar-nav> li> a:hover {
+          color: #2cd3b4;
+        }
+        .navbar.navbar-default .navbar-nav> .active> a, .navbar.navbar-default .navbar-nav> .active> a:focus, .navbar.navbar-default .navbar-nav> .active> a:hover {
+          color: #2cd3b4;
+        }
+        #docs-main .page-header {
+          color: #2cd3b4;
+        }
+        #docs-main .page-section .nav-tabs {
+          border-bottom: 1px solid #2cd3b4;
+        }
+        #docs-main .page-section .nav-tabs> li.active a {
+          background: #2cd3b4;
+          border: 1px solid #2cd3b4;
+        }
+        #sidebar li.panel .panel-body ol> li.active, #sidebar li.panel .panel-body ol> li:hover {
+          background: #efefef;
+        }
+      </style>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="../" class="navbar-brand">
+              <img src="http://redciudadana.org/wp-content/uploads/2018/05/red-logo-01.png" alt="enterprise logo">
+            <span>MiGuatemala</span>
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://github.com/RedCiudadana/MiGuatemala" class="fa fa-github github"></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="main-wrapper" class="row">
+        <div id="content-wrapper">
+            <ol class="panel-group" id="sidebar" role="tablist" aria-multiselectable="true">
+                <li class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="sidebar-search-heading">
+                        <h4 class="panel-title">
+                      <a role="button" data-toggle="collapse" href="#sidebar-search" aria-expanded="true" aria-controls="collapseOne">
+                        Search
+                      </a>
+                    </h4>
+                    </div>
+                    <div id="sidebar-search" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="sidebar-search-heading">
+                        <div class="panel-body">
+                            <div id="api-tabview-filter">
+                                <input type="search" id="api-filter" placeholder="Search...">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                    <li class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="sidebar-version-heading">
+                            <h4 class="panel-title">
+                                <a role="button" href="https://github.com/RedCiudadana/MiGuatemala/commits/e7eb2faf" target="_blank">
+                                  Tag: 0.4.2.e7eb2faf
+                                </a>
+                            </h4>
+                        </div>
+                    </li>
+                <li class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="sidebar-modules-heading">
+                        <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" href="#sidebar-modules" aria-expanded="true" aria-controls="collapseOne">
+                      Modules
+                    </a>
+                  </h4>
+                    </div>
+                    <div id="sidebar-modules" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="sidebar-modules-heading">
+                        <div class="panel-body">
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="sidebar-classes-heading">
+                        <h4 class="panel-title">
+                      <a role="button" data-toggle="collapse" href="#sidebar-classes" aria-expanded="true" aria-controls="collapseOne">
+                        Classes
+                      </a>
+                    </h4>
+                    </div>
+                    <div id="sidebar-classes" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="sidebar-classes-heading">
+                        <div class="panel-body">
+                            <ol>
+                                    <li>
+                                        <a href="../classes/Adapter.Spreadsheet.html">Adapter.Spreadsheet</a>
+                                    </li>
+                                    <li>
+                                        <a href="../classes/Initializer.Main.html">Initializer.Main</a>
+                                    </li>
+                                    <li>
+                                        <a href="../classes/Model.Commision-deputies.html">Model.Commision-deputies</a>
+                                    </li>
+                                    <li>
+                                        <a href="../classes/Model.Magistrate.html">Model.Magistrate</a>
+                                    </li>
+                                    <li>
+                                        <a href="../classes/Model.Party.html">Model.Party</a>
+                                    </li>
+                                    <li>
+                                        <a href="../classes/Model.Profile.html">Model.Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="../classes/Route.Application.html">Route.Application</a>
+                                    </li>
+                                    <li>
+                                        <a href="../classes/Route.Index.html">Route.Index</a>
+                                    </li>
+                                    <li>
+                                        <a href="../classes/Route.Perfil.html">Route.Perfil</a>
+                                    </li>
+                                    <li>
+                                        <a href="../classes/Service.Spreadsheets.html">Service.Spreadsheets</a>
+                                    </li>
+                            </ol>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+            <div class="content-container">
+                <div class="apidocs">
+                    <div id="docs-main">
+                        <div class="content">
+
+
+<div class="page-header">
+    <h1> <i class="fa fa-bookmark-o" aria-hidden="true"></i> Model.Magistrate Class
+            <a class="pull-right file-edit" href="https://github.com/RedCiudadana/MiGuatemala/blob/e7eb2faf/app/models/magistrate.js#L5" target="_blank">
+              <i class="fa fa-pencil" aria-hidden="true"></i>
+            </a>
+    </h1>
+</div>
+
+
+<div class="content-meta">
+
+        <div class="extends">
+            Extends: <a href="../classes/Model.Profile.html" class="crosslink">Model.Profile</a>
+        </div>
+
+
+
+        <div class="foundat">
+            Defined In: <a href="https://github.com/RedCiudadana/MiGuatemala/blob/e7eb2faf/app/models/magistrate.js#L5">app/models/magistrate.js:5</a>
+        </div>
+</div>
+
+
+
+  <div class="class-description">
+  <p>Modelo para magistrados</p>
+
+  </div>
+
+<div>
+    <div class="page-section">
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+          <li role="presentation" class="active"><a href="#tab_index" aria-controls="tab_index" role="tab" data-toggle="tab">Index</a></li>
+
+            <li role="presentation"><a href="#tab_properties" aria-controls="tab_properties" role="tab" data-toggle="tab">Properties</a></li>
+
+
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+
+              <form id="options-form" class="form-inline">
+                  Show:
+                  <label for="api-show-inherited" class="checkbox">
+                      <input type="checkbox" id="api-show-inherited" checked>
+                      Inherited
+                  </label>
+          
+                  <label for="api-show-protected" class="checkbox">
+                      <input type="checkbox" id="api-show-protected">
+                      Protected
+                  </label>
+          
+                  <label for="api-show-private" class="checkbox">
+                      <input type="checkbox" id="api-show-private">
+                      Private
+                  </label>
+                  <label for="api-show-deprecated" class="checkbox">
+                      <input type="checkbox" id="api-show-deprecated">
+                      Deprecated
+                  </label>
+          
+              </form>
+
+          <div id="tab_index" role="tabpanel" class="tab-pane active" >
+
+                  <div class="index-section properties">
+                      <h3>Properties</h3>
+
+                      <ul class="index-list properties extends">
+                              <li class="index-item property">
+                                  <a href="#property_biografia">biografia</a>
+
+                              </li>
+                              <li class="index-item property">
+                                  <a href="#property_desempenio">desempenio</a>
+
+                              </li>
+                              <li class="index-item property inherited">
+                                  <a href="#property_dirreccion">dirreccion</a>
+
+                              </li>
+                              <li class="index-item property inherited">
+                                  <a href="#property_disqusIdentifier">disqusIdentifier</a>
+
+                              </li>
+                              <li class="index-item property inherited">
+                                  <a href="#property_edad">edad</a>
+
+                              </li>
+                              <li class="index-item property">
+                                  <a href="#property_educacion">educacion</a>
+
+                              </li>
+                              <li class="index-item property inherited">
+                                  <a href="#property_email">email</a>
+
+                              </li>
+                              <li class="index-item property inherited">
+                                  <a href="#property_estado">estado</a>
+
+                              </li>
+                              <li class="index-item property">
+                                  <a href="#property_experienciaProfesional">experienciaProfesional</a>
+
+                              </li>
+                              <li class="index-item property inherited">
+                                  <a href="#property_fb">fb</a>
+
+                              </li>
+                              <li class="index-item property">
+                                  <a href="#property_fotoPartido">fotoPartido</a>
+
+                              </li>
+                              <li class="index-item property inherited">
+                                  <a href="#property_fotoPerfil">fotoPerfil</a>
+
+                              </li>
+                              <li class="index-item property inherited">
+                                  <a href="#property_fotoURL">fotoURL</a>
+
+                              </li>
+                              <li class="index-item property">
+                                  <a href="#property_frenteAFrente">frenteAFrente</a>
+
+                              </li>
+                              <li class="index-item property">
+                                  <a href="#property_informacionGeneral">informacionGeneral</a>
+
+                              </li>
+                              <li class="index-item property">
+                                  <a href="#property_institucion">institucion</a>
+
+                              </li>
+                              <li class="index-item property inherited">
+                                  <a href="#property_name">name</a>
+
+                              </li>
+                              <li class="index-item property">
+                                  <a href="#property_planTrabajo">planTrabajo</a>
+
+                              </li>
+                              <li class="index-item property">
+                                  <a href="#property_profesion">profesion</a>
+
+                              </li>
+                              <li class="index-item property">
+                                  <a href="#property_proyeccion">proyeccion</a>
+
+                              </li>
+                              <li class="index-item property">
+                                  <a href="#property_recuadros">recuadros</a>
+
+                              </li>
+                              <li class="index-item property inherited">
+                                  <a href="#property_selector">selector</a>
+
+                              </li>
+                              <li class="index-item property inherited">
+                                  <a href="#property_sexo">sexo</a>
+
+                              </li>
+                              <li class="index-item property inherited">
+                                  <a href="#property_telefono">telefono</a>
+
+                              </li>
+                              <li class="index-item property inherited">
+                                  <a href="#property_tw">tw</a>
+
+                              </li>
+                      </ul>
+                  </div>
+
+
+          </div>
+
+
+              <div id="tab_properties" role="tabpanel" class="tab-pane">
+                  <div class="item-list">
+  <div id="property_biografia" class="property item">
+      <h3 class="name anchorable-toc">
+          <a class="fa fa-link toc-anchor" href="#property_biografia"></a>
+          biografia
+      </h3>
+      <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+  
+  
+  
+  
+  
+      <div class="meta">
+                  <p>
+                  Defined in
+          <a href="https://github.com/RedCiudadana/MiGuatemala/blob/e7eb2faf/app/models/magistrate.js#L30">app/models/magistrate.js:30</a>
+          </p>
+  
+  
+      </div>
+  
+      <div class="description">
+          <p>Biografía.</p>
+  
+      </div>
+  
+  
+  
+  </div>
+  <div id="property_desempenio" class="property item">
+      <h3 class="name anchorable-toc">
+          <a class="fa fa-link toc-anchor" href="#property_desempenio"></a>
+          desempenio
+      </h3>
+      <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+  
+  
+  
+  
+  
+      <div class="meta">
+                  <p>
+                  Defined in
+          <a href="https://github.com/RedCiudadana/MiGuatemala/blob/e7eb2faf/app/models/magistrate.js#L38">app/models/magistrate.js:38</a>
+          </p>
+  
+  
+      </div>
+  
+      <div class="description">
+          <p>Desempeño.</p>
+  
+      </div>
+  
+  
+  
+  </div>
+  <div id="property_dirreccion" class="property item inherited">
+      <h3 class="name anchorable-toc">
+          <a class="fa fa-link toc-anchor" href="#property_dirreccion"></a>
+          dirreccion
+      </h3>
+      <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+  
+  
+  
+  
+  
+      <div class="meta">
+                  <p>Inherited from
+                  <a href="../classes/Model.Profile.html#property_dirreccion">Model.Profile</a>:
+          <a href="https://github.com/RedCiudadana/MiGuatemala/blob/e7eb2faf/app/models/profile.js#L61">app/models/profile.js:61</a>
+          </p>
+  
+  
+      </div>
+  
+      <div class="description">
+          Dirrección.
+      </div>
+  
+  
+  
+  </div>
+  <div id="property_disqusIdentifier" class="property item inherited">
+      <h3 class="name anchorable-toc">
+          <a class="fa fa-link toc-anchor" href="#property_disqusIdentifier"></a>
+          disqusIdentifier
+      </h3>
+      <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+  
+  
+  
+  
+  
+      <div class="meta">
+                  <p>Inherited from
+                  <a href="../classes/Model.Profile.html#property_disqusIdentifier">Model.Profile</a>:
+          <a href="https://github.com/RedCiudadana/MiGuatemala/blob/e7eb2faf/app/models/profile.js#L139">app/models/profile.js:139</a>
+          </p>
+  
+  
+      </div>
+  
+      <div class="description">
+          Identificador de Disqus
+      </div>
+  
+          <p><br><strong>Default:</strong> &quot;perfil-0&quot;</p>
+  
+  
+  </div>
+  <div id="property_edad" class="property item inherited">
+      <h3 class="name anchorable-toc">
+          <a class="fa fa-link toc-anchor" href="#property_edad"></a>
+          edad
+      </h3>
+      <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+  
+  
+  
+  
+  
+      <div class="meta">
+                  <p>Inherited from
+                  <a href="../classes/Model.Profile.html#property_edad">Model.Profile</a>:
+          <a href="https://github.com/RedCiudadana/MiGuatemala/blob/e7eb2faf/app/models/profile.js#L21">app/models/profile.js:21</a>
+          </p>
+  
+  
+      </div>
+  
+      <div class="description">
+          Edad de la persona.
+      </div>
+  
+  
+  
+  </div>
+  <div id="property_educacion" class="property item">
+      <h3 class="name anchorable-toc">
+          <a class="fa fa-link toc-anchor" href="#property_educacion"></a>
+          educacion
+      </h3>
+      <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+  
+  
+  
+  
+  
+      <div class="meta">
+                  <p>
+                  Defined in
+          <a href="https://github.com/RedCiudadana/MiGuatemala/blob/e7eb2faf/app/models/magistrate.js#L22">app/models/magistrate.js:22</a>
+          </p>
+  
+  
+      </div>
+  
+      <div class="description">
+          <p>Grado de educación.</p>
+  
+      </div>
+  
+  
+  
+  </div>
+  <div id="property_email" class="property item inherited">
+      <h3 class="name anchorable-toc">
+          <a class="fa fa-link toc-anchor" href="#property_email"></a>
+          email
+      </h3>
+      <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+  
+  
+  
+  
+  
+      <div class="meta">
+                  <p>Inherited from
+                  <a href="../classes/Model.Profile.html#property_email">Model.Profile</a>:
+          <a href="https://github.com/RedCiudadana/MiGuatemala/blob/e7eb2faf/app/models/profile.js#L37">app/models/profile.js:37</a>
+          </p>
+  
+  
+      </div>
+  
+      <div class="description">
+          Correo electrónico - Email.
+      </div>
+  
+  
+  
+  </div>
+  <div id="property_estado" class="property item inherited">
+      <h3 class="name anchorable-toc">
+          <a class="fa fa-link toc-anchor" href="#property_estado"></a>
+          estado
+      </h3>
+      <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+  
+  
+  
+  
+  
+      <div class="meta">
+                  <p>Inherited from
+                  <a href="../classes/Model.Profile.html#property_estado">Model.Profile</a>:
+          <a href="https://github.com/RedCiudadana/MiGuatemala/blob/e7eb2faf/app/models/profile.js#L85">app/models/profile.js:85</a>
+          </p>
+  
+  
+      </div>
+  
+      <div class="description">
+          Estado de la persona según el proceso que se lleva acabo del proyecto. Ejemplo una elección sería "En proceso" o "Descalificado".
+      </div>
+  
+  
+  
+  </div>
+  <div id="property_experienciaProfesional" class="property item">
+      <h3 class="name anchorable-toc">
+          <a class="fa fa-link toc-anchor" href="#property_experienciaProfesional"></a>
+          experienciaProfesional
+      </h3>
+      <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+  
+  
+  
+  
+  
+      <div class="meta">
+                  <p>
+                  Defined in
+          <a href="https://github.com/RedCiudadana/MiGuatemala/blob/e7eb2faf/app/models/magistrate.js#L46">app/models/magistrate.js:46</a>
+          </p>
+  
+  
+      </div>
+  
+      <div class="description">
+          <p>Experiencia profesional.</p>
+  
+      </div>
+  
+  
+  
+  </div>
+  <div id="property_fb" class="property item inherited">
+      <h3 class="name anchorable-toc">
+          <a class="fa fa-link toc-anchor" href="#property_fb"></a>
+          fb
+      </h3>
+      <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+  
+  
+  
+  
+  
+      <div class="meta">
+                  <p>Inherited from
+                  <a href="../classes/Model.Profile.html#property_fb">Model.Profile</a>:
+          <a href="https://github.com/RedCiudadana/MiGuatemala/blob/e7eb2faf/app/models/profile.js#L45">app/models/profile.js:45</a>
+          </p>
+  
+  
+      </div>
+  
+      <div class="description">
+          Perfil de Facebook, la URL.
+      </div>
+  
+  
+  
+  </div>
+  <div id="property_fotoPartido" class="property item">
+      <h3 class="name anchorable-toc">
+          <a class="fa fa-link toc-anchor" href="#property_fotoPartido"></a>
+          fotoPartido
+      </h3>
+      <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+  
+  
+  
+  
+  
+      <div class="meta">
+                  <p>
+                  Defined in
+          <a href="https://github.com/RedCiudadana/MiGuatemala/blob/e7eb2faf/app/models/magistrate.js#L104">app/models/magistrate.js:104</a>
+          </p>
+  
+  
+      </div>
+  
+      <div class="description">
+          <p>Foto del partido.</p>
+  
+      </div>
+  
+  
+  
+  </div>
+  <div id="property_fotoPerfil" class="property item inherited">
+      <h3 class="name anchorable-toc">
+          <a class="fa fa-link toc-anchor" href="#property_fotoPerfil"></a>
+          fotoPerfil
+      </h3>
+      <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+  
+  
+  
+  
+  
+      <div class="meta">
+                  <p>Inherited from
+                  <a href="../classes/Model.Profile.html#property_fotoPerfil">Model.Profile</a>:
+          <a href="https://github.com/RedCiudadana/MiGuatemala/blob/e7eb2faf/app/models/profile.js#L95">app/models/profile.js:95</a>
+          </p>
+  
+  
+      </div>
+  
+      <div class="description">
+          Foto del perfil.
+      </div>
+  
+          <p><br><strong>Default:</strong> &quot;images/Magistrado.jpg&quot;</p>
+  
+  
+  </div>
+  <div id="property_fotoURL" class="property item inherited">
+      <h3 class="name anchorable-toc">
+          <a class="fa fa-link toc-anchor" href="#property_fotoURL"></a>
+          fotoURL
+      </h3>
+      <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+  
+  
+  
+  
+  
+      <div class="meta">
+                  <p>Inherited from
+                  <a href="../classes/Model.Profile.html#property_fotoURL">Model.Profile</a>:
+          <a href="https://github.com/RedCiudadana/MiGuatemala/blob/e7eb2faf/app/models/profile.js#L29">app/models/profile.js:29</a>
+          </p>
+  
+  
+      </div>
+  
+      <div class="description">
+          URL de la foto de la persona.
+      </div>
+  
+  
+  
+  </div>
+  <div id="property_frenteAFrente" class="property item">
+      <h3 class="name anchorable-toc">
+          <a class="fa fa-link toc-anchor" href="#property_frenteAFrente"></a>
+          frenteAFrente
+      </h3>
+      <span class="type">Frente-a-frente</span>
+  
+  
+  
+  
+  
+      <div class="meta">
+                  <p>
+                  Defined in
+          <a href="https://github.com/RedCiudadana/MiGuatemala/blob/e7eb2faf/app/models/magistrate.js#L70">app/models/magistrate.js:70</a>
+          </p>
+  
+  
+      </div>
+  
+      <div class="description">
+          <p>Campos a evaluar en la modularidad frente a frente. Son serializados después.</p>
+  
+      </div>
+  
+  
+  
+  </div>
+  <div id="property_informacionGeneral" class="property item">
+      <h3 class="name anchorable-toc">
+          <a class="fa fa-link toc-anchor" href="#property_informacionGeneral"></a>
+          informacionGeneral
+      </h3>
+      <span class="type">Informacion-general</span>
+  
+  
+  
+  
+  
+      <div class="meta">
+                  <p>
+                  Defined in
+          <a href="https://github.com/RedCiudadana/MiGuatemala/blob/e7eb2faf/app/models/magistrate.js#L54">app/models/magistrate.js:54</a>
+          </p>
+  
+  
+      </div>
+  
+      <div class="description">
+          <p>Información general. Campos para mostrar en información general. Son serializados después.</p>
+  
+      </div>
+  
+  
+  
+  </div>
+  <div id="property_institucion" class="property item">
+      <h3 class="name anchorable-toc">
+          <a class="fa fa-link toc-anchor" href="#property_institucion"></a>
+          institucion
+      </h3>
+      <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+  
+  
+  
+  
+  
+      <div class="meta">
+                  <p>
+                  Defined in
+          <a href="https://github.com/RedCiudadana/MiGuatemala/blob/e7eb2faf/app/models/magistrate.js#L78">app/models/magistrate.js:78</a>
+          </p>
+  
+  
+      </div>
+  
+      <div class="description">
+          <p>Institución</p>
+  
+      </div>
+  
+  
+  
+  </div>
+  <div id="property_name" class="property item inherited">
+      <h3 class="name anchorable-toc">
+          <a class="fa fa-link toc-anchor" href="#property_name"></a>
+          name
+      </h3>
+      <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+  
+  
+  
+  
+  
+      <div class="meta">
+                  <p>Inherited from
+                  <a href="../classes/Model.Profile.html#property_name">Model.Profile</a>:
+          <a href="https://github.com/RedCiudadana/MiGuatemala/blob/e7eb2faf/app/models/profile.js#L13">app/models/profile.js:13</a>
+          </p>
+  
+  
+      </div>
+  
+      <div class="description">
+          Nombre de la persona.
+      </div>
+  
+  
+  
+  </div>
+  <div id="property_planTrabajo" class="property item">
+      <h3 class="name anchorable-toc">
+          <a class="fa fa-link toc-anchor" href="#property_planTrabajo"></a>
+          planTrabajo
+      </h3>
+      <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+  
+  
+  
+  
+  
+      <div class="meta">
+                  <p>
+                  Defined in
+          <a href="https://github.com/RedCiudadana/MiGuatemala/blob/e7eb2faf/app/models/magistrate.js#L86">app/models/magistrate.js:86</a>
+          </p>
+  
+  
+      </div>
+  
+      <div class="description">
+          <p>Plan de trabajo</p>
+  
+      </div>
+  
+  
+  
+  </div>
+  <div id="property_profesion" class="property item">
+      <h3 class="name anchorable-toc">
+          <a class="fa fa-link toc-anchor" href="#property_profesion"></a>
+          profesion
+      </h3>
+      <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+  
+  
+  
+  
+  
+      <div class="meta">
+                  <p>
+                  Defined in
+          <a href="https://github.com/RedCiudadana/MiGuatemala/blob/e7eb2faf/app/models/magistrate.js#L14">app/models/magistrate.js:14</a>
+          </p>
+  
+  
+      </div>
+  
+      <div class="description">
+          <p>Profesión.</p>
+  
+      </div>
+  
+  
+  
+  </div>
+  <div id="property_proyeccion" class="property item">
+      <h3 class="name anchorable-toc">
+          <a class="fa fa-link toc-anchor" href="#property_proyeccion"></a>
+          proyeccion
+      </h3>
+      <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+  
+  
+  
+  
+  
+      <div class="meta">
+                  <p>
+                  Defined in
+          <a href="https://github.com/RedCiudadana/MiGuatemala/blob/e7eb2faf/app/models/magistrate.js#L94">app/models/magistrate.js:94</a>
+          </p>
+  
+  
+      </div>
+  
+      <div class="description">
+          <p>Proyección</p>
+  
+      </div>
+  
+  
+  
+  </div>
+  <div id="property_recuadros" class="property item">
+      <h3 class="name anchorable-toc">
+          <a class="fa fa-link toc-anchor" href="#property_recuadros"></a>
+          recuadros
+      </h3>
+      <span class="type">Frente-a-frente</span>
+  
+  
+  
+  
+  
+      <div class="meta">
+                  <p>
+                  Defined in
+          <a href="https://github.com/RedCiudadana/MiGuatemala/blob/e7eb2faf/app/models/magistrate.js#L62">app/models/magistrate.js:62</a>
+          </p>
+  
+  
+      </div>
+  
+      <div class="description">
+          <p>Recuadros. Otra modularidad de frente a frente.</p>
+  
+      </div>
+  
+  
+  
+  </div>
+  <div id="property_selector" class="property item inherited">
+      <h3 class="name anchorable-toc">
+          <a class="fa fa-link toc-anchor" href="#property_selector"></a>
+          selector
+      </h3>
+      <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+  
+  
+  
+  
+  
+      <div class="meta">
+                  <p>Inherited from
+                  <a href="../classes/Model.Profile.html#property_selector">Model.Profile</a>:
+          <a href="https://github.com/RedCiudadana/MiGuatemala/blob/e7eb2faf/app/models/profile.js#L110">app/models/profile.js:110</a>
+          </p>
+  
+  
+      </div>
+  
+      <div class="description">
+          Selector para Isotope. Genera un 'String' con etiquetas para poder filtrar elementos desde el HTML con Isotope.
+      </div>
+  
+          <p><br><strong>Default:</strong> &quot;&quot;</p>
+  
+  
+  </div>
+  <div id="property_sexo" class="property item inherited">
+      <h3 class="name anchorable-toc">
+          <a class="fa fa-link toc-anchor" href="#property_sexo"></a>
+          sexo
+      </h3>
+      <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+  
+  
+  
+  
+  
+      <div class="meta">
+                  <p>Inherited from
+                  <a href="../classes/Model.Profile.html#property_sexo">Model.Profile</a>:
+          <a href="https://github.com/RedCiudadana/MiGuatemala/blob/e7eb2faf/app/models/profile.js#L77">app/models/profile.js:77</a>
+          </p>
+  
+  
+      </div>
+  
+      <div class="description">
+          Sexo.
+      </div>
+  
+  
+  
+  </div>
+  <div id="property_telefono" class="property item inherited">
+      <h3 class="name anchorable-toc">
+          <a class="fa fa-link toc-anchor" href="#property_telefono"></a>
+          telefono
+      </h3>
+      <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+  
+  
+  
+  
+  
+      <div class="meta">
+                  <p>Inherited from
+                  <a href="../classes/Model.Profile.html#property_telefono">Model.Profile</a>:
+          <a href="https://github.com/RedCiudadana/MiGuatemala/blob/e7eb2faf/app/models/profile.js#L69">app/models/profile.js:69</a>
+          </p>
+  
+  
+      </div>
+  
+      <div class="description">
+          Número de telefono.
+      </div>
+  
+  
+  
+  </div>
+  <div id="property_tw" class="property item inherited">
+      <h3 class="name anchorable-toc">
+          <a class="fa fa-link toc-anchor" href="#property_tw"></a>
+          tw
+      </h3>
+      <span class="type"><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String" class="crosslink external" target="_blank">String</a></span>
+  
+  
+  
+  
+  
+      <div class="meta">
+                  <p>Inherited from
+                  <a href="../classes/Model.Profile.html#property_tw">Model.Profile</a>:
+          <a href="https://github.com/RedCiudadana/MiGuatemala/blob/e7eb2faf/app/models/profile.js#L53">app/models/profile.js:53</a>
+          </p>
+  
+  
+      </div>
+  
+      <div class="description">
+          Perfil de Twitter, la URL.
+      </div>
+  
+  
+  
+  </div>
+                  </div>
+              </div>
+
+
+      </div>
+    </div>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/vendor/prettify/prettify-min-c3b43404676b1f35c7a17dca1046d138.js"></script>
+    <script>prettyPrint();</script>
+    <script src="../assets/vendor/jquery/jquery.min-bc8ef4cd0cd640456b5bf20187cf8b1c.js"></script>
+    <script src="../assets/vendor/jquery-ui/jquery-ui.min-9ed2deabeed939d607f3e897c0289e33.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap-a41e04d9b72a5dd641c23b9e9aba8c54.js"></script>
+    <script src="../assets/vendor/github-slugger/slugger-7661fd7882796442fad8dbed29b942c7.js"></script>
+    <script src="../assets/js/yuidoc-bootstrap-cd68f0df16e5ebcaf12ec5f5ad828e46.js"></script>
+</body>
+</html>

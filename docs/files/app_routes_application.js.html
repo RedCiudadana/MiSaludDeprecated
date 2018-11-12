@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>app/routes/application.js - MiGuatemala</title>
+    <meta name="description" content="MiGuatemala es una aplicación destinada a la transparencia en materia de funcionarios públicos.">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/3.9.1/build/cssgrids/cssgrids-min.css">
+    <link rel="stylesheet" href="../assets/vendor/prettify/prettify-min-c9648fe24982602c2862e478522fc244.css">
+    <link rel="stylesheet" href="../assets/css/main-409eab3833b69a366656483ab9d2c06d.css" id="site_styles">
+    <link rel="stylesheet" href="../assets/css/custom-6737633e00d20544befe6a4082b321d1.css">
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap-5ba37ad9163643c32251366754f08b2a.css">
+    <link rel="stylesheet" href="../assets/vendor/font-awesome/css/font-awesome.min-4083f5d376eb849a458cc790b53ba080.css">
+    <link rel="stylesheet" href="../assets/css/theme-a946b57167156ca03ef797c0a6a003d8.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300,400,500,600,700' rel='stylesheet' type='text/css'>
+    
+
+      <style>
+        body a {
+          color: #2cd3b4;
+        }
+        body a:hover {
+          color: #2cd3b4;
+          opacity: 0.5;
+        }
+        .navbar.navbar-default .navbar-nav> li> a:focus, .navbar.navbar-default .navbar-nav> li> a:hover {
+          color: #2cd3b4;
+        }
+        .navbar.navbar-default .navbar-nav> .active> a, .navbar.navbar-default .navbar-nav> .active> a:focus, .navbar.navbar-default .navbar-nav> .active> a:hover {
+          color: #2cd3b4;
+        }
+        #docs-main .page-header {
+          color: #2cd3b4;
+        }
+        #docs-main .page-section .nav-tabs {
+          border-bottom: 1px solid #2cd3b4;
+        }
+        #docs-main .page-section .nav-tabs> li.active a {
+          background: #2cd3b4;
+          border: 1px solid #2cd3b4;
+        }
+        #sidebar li.panel .panel-body ol> li.active, #sidebar li.panel .panel-body ol> li:hover {
+          background: #efefef;
+        }
+      </style>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="../" class="navbar-brand">
+              <img src="http://redciudadana.org/wp-content/uploads/2018/05/red-logo-01.png" alt="enterprise logo">
+            <span>MiGuatemala</span>
+          </a>
+        </div>
+
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="https://github.com/RedCiudadana/MiGuatemala" class="fa fa-github github"></a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div id="main-wrapper" class="row">
+        <div id="content-wrapper">
+            <ol class="panel-group" id="sidebar" role="tablist" aria-multiselectable="true">
+                <li class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="sidebar-search-heading">
+                        <h4 class="panel-title">
+                      <a role="button" data-toggle="collapse" href="#sidebar-search" aria-expanded="true" aria-controls="collapseOne">
+                        Search
+                      </a>
+                    </h4>
+                    </div>
+                    <div id="sidebar-search" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="sidebar-search-heading">
+                        <div class="panel-body">
+                            <div id="api-tabview-filter">
+                                <input type="search" id="api-filter" placeholder="Search...">
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                    <li class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="sidebar-version-heading">
+                            <h4 class="panel-title">
+                                <a role="button" href="https://github.com/RedCiudadana/MiGuatemala/commits/e7eb2faf" target="_blank">
+                                  Tag: 0.4.2.e7eb2faf
+                                </a>
+                            </h4>
+                        </div>
+                    </li>
+                <li class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="sidebar-modules-heading">
+                        <h4 class="panel-title">
+                    <a role="button" data-toggle="collapse" href="#sidebar-modules" aria-expanded="true" aria-controls="collapseOne">
+                      Modules
+                    </a>
+                  </h4>
+                    </div>
+                    <div id="sidebar-modules" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="sidebar-modules-heading">
+                        <div class="panel-body">
+                        </div>
+                    </div>
+                </li>
+            
+                <li class="panel panel-default">
+                    <div class="panel-heading" role="tab" id="sidebar-classes-heading">
+                        <h4 class="panel-title">
+                      <a role="button" data-toggle="collapse" href="#sidebar-classes" aria-expanded="true" aria-controls="collapseOne">
+                        Classes
+                      </a>
+                    </h4>
+                    </div>
+                    <div id="sidebar-classes" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="sidebar-classes-heading">
+                        <div class="panel-body">
+                            <ol>
+                                    <li>
+                                        <a href="../classes/Adapter.Spreadsheet.html">Adapter.Spreadsheet</a>
+                                    </li>
+                                    <li>
+                                        <a href="../classes/Initializer.Main.html">Initializer.Main</a>
+                                    </li>
+                                    <li>
+                                        <a href="../classes/Model.Commision-deputies.html">Model.Commision-deputies</a>
+                                    </li>
+                                    <li>
+                                        <a href="../classes/Model.Magistrate.html">Model.Magistrate</a>
+                                    </li>
+                                    <li>
+                                        <a href="../classes/Model.Party.html">Model.Party</a>
+                                    </li>
+                                    <li>
+                                        <a href="../classes/Model.Profile.html">Model.Profile</a>
+                                    </li>
+                                    <li>
+                                        <a href="../classes/Route.Application.html">Route.Application</a>
+                                    </li>
+                                    <li>
+                                        <a href="../classes/Route.Index.html">Route.Index</a>
+                                    </li>
+                                    <li>
+                                        <a href="../classes/Route.Perfil.html">Route.Perfil</a>
+                                    </li>
+                                    <li>
+                                        <a href="../classes/Service.Spreadsheets.html">Service.Spreadsheets</a>
+                                    </li>
+                            </ol>
+                        </div>
+                    </div>
+                </li>
+            </ol>
+            <div class="content-container">
+                <div class="apidocs">
+                    <div id="docs-main">
+                        <div class="content">
+<div class="page-header">
+    <h1><i class="fa fa-file-code-o" aria-hidden="true"></i>  File</h1>
+</div>
+
+<div class="file">
+    <pre class="prettyprint linenums">
+import config from &#x27;../config/environment&#x27;;
+import EmberObject from &#x27;@ember/object&#x27;;
+import Route from &#x27;@ember/routing/route&#x27;;
+import RSVP from &#x27;rsvp&#x27;;
+import { A } from &#x27;@ember/array&#x27;;
+import { hash } from &#x27;rsvp&#x27;;
+import { inject as service } from &#x27;@ember/service&#x27;;
+import { isBlank } from &#x27;@ember/utils&#x27;;
+import { Promise } from &#x27;rsvp&#x27;;
+
+/**
+ * Serializa los modelos y obtiene perfiles, config, navbarLinks, a traves del servicio: spreadsheets.
+ *
+ * @class Route.Application
+ */
+export default Route.extend({
+
+  /**
+   * Servicio para obtener datos, ya sea desde &#x27;static-files&#x27; o las hojas de datos públicadas.
+   *
+   * @property spreadsheets
+   * @type Service
+   */
+  spreadsheets: service(),
+
+  /**
+   * Servicio de rutas. Utilizado para comprobar que existan ciertas rutas que son indicadas en la configuración (navbarLinks).
+   *
+   * @property _routing
+   * @type Service
+   */
+  _routing: service(&#x27;-routing&#x27;),
+
+  /**
+   * Obtiene los datos de archivos. Utilizado para obtener las URLs de las hojas de calculo publicadas.
+   *
+   * @property ajax
+   * @type Service
+   */
+  ajax: service(),
+
+  /**
+   * Establecer la &#x27;URL&#x27; de los datos y configuraciones en el servicio spreadsheet. Además procesar los campos de serialización y serializar.
+   *
+   * @method beforeModel
+   */
+  beforeModel() {
+    const spreadsheetService = this.get(&#x27;spreadsheets&#x27;);
+
+    return this.get(&#x27;ajax&#x27;)
+      // Obtiene dataSpreadsheetSourceUrl de las configuraciones
+      .request(config.APP.dataSpreadsheetSourceUrl, { dataType: &#x27;text&#x27; })
+      .then((response) =&gt; {
+        // Agrega la url de datos al servicio
+        spreadsheetService.set(&#x27;dataSpreadsheetUrl&#x27;, response);
+        // Utiliza la misma url de datos para configuraciones
+        spreadsheetService.set(&#x27;configSpreadsheetUrl&#x27;, response);
+        // En el caso que un url para configuraciones existe la obtiene y la agrega
+        if (!isBlank(config.APP.configSpreadsheetSourceUrl)) {
+          return this.get(&#x27;ajax&#x27;)
+            .request(config.APP.configSpreadsheetSourceUrl, { dataType: &#x27;text&#x27; })
+            .then((response) =&gt; spreadsheetService.set(&#x27;configSpreadsheetUrl&#x27;, response));
+        }
+        return Promise.resolve(this);
+      })
+
+      // Obtiene datos de configuraciones para serializar
+      .then(() =&gt; RSVP.all([
+
+        /**
+         * Setear la información general del perfil mediante la parametrización
+         * proveniente de la configuración
+         */
+        spreadsheetService
+          .fetchConfig(&#x27;perfil-informacion-general-configuracion&#x27;)
+          .then((configuracionData) =&gt; {
+            let perfilDataArray = A([]);
+
+            A(configuracionData).forEach((item) =&gt; {
+              perfilDataArray.pushObject({
+                field: item.field,
+                label: item.label
+              });
+            });
+
+            let prefilSerializer = this.store.serializerFor(&#x27;magistrate&#x27;);
+
+            prefilSerializer.set(&#x27;informacionGeneralFields&#x27;, perfilDataArray);
+          }),
+
+        /**
+         * Setear la información de recuadros del perfil mediante la parametrización
+         * proveniente de la configuración
+         */
+        spreadsheetService
+          .fetchConfig(&#x27;perfil-recuadros-configuracion&#x27;)
+          .then((configuracionData) =&gt; {
+            let perfilRecuadrosDataArray = A([]);
+
+            A(configuracionData).forEach((item) =&gt; {
+              perfilRecuadrosDataArray.pushObject({
+                field: item.field,
+                label: item.label
+              });
+            });
+
+            let prefilSerializer = this.store.serializerFor(&#x27;magistrate&#x27;);
+
+            prefilSerializer.set(&#x27;recuadrosFields&#x27;, perfilRecuadrosDataArray);
+          }),
+
+        /**
+         * Setear los campos a utilizar en la funcionalidad de frente-a-frente
+         */
+        spreadsheetService
+          .fetchConfig(&#x27;perfil-frente-a-frente-configuracion&#x27;)
+          .then((configuracionData) =&gt; {
+            let perfilFrenteAFrenteDataArray = A([]);
+
+            A(configuracionData).forEach((item) =&gt; {
+              perfilFrenteAFrenteDataArray.pushObject({
+                field: item.field,
+                label: item.label,
+                section: item.section
+              });
+            });
+
+            let prefilSerializer = this.store.serializerFor(&#x27;magistrate&#x27;);
+
+            prefilSerializer.set(&#x27;frenteAFrenteFields&#x27;, perfilFrenteAFrenteDataArray);
+          }),
+
+        /**
+         * Setear la información general del perfil:comission-deputies mediante la parametrización
+         * proveniente de la configuración
+         */
+        spreadsheetService
+          .fetchConfig(&#x27;diputado-informacion-general-configuracion&#x27;)
+          .then((configuracionData) =&gt; {
+            let perfilDataArray = A([]);
+
+            A(configuracionData).forEach((item) =&gt; {
+              perfilDataArray.pushObject({
+                field: item.field,
+                label: item.label
+              });
+            });
+
+            let prefilSerializer = this.store.serializerFor(&#x27;commission-deputies&#x27;);
+
+            prefilSerializer.set(&#x27;informacionGeneralFields&#x27;, perfilDataArray);
+          })
+      ]));
+  },
+
+  /**
+   * Datos principales de la aplicación.
+   *
+   * @method model
+   * @return {Object} Perfiles, config, navbarLinks.
+   */
+  model() {
+    const spreadsheet = this.get(&#x27;spreadsheets&#x27;);
+    const _routing = this.get(&#x27;_routing&#x27;);
+
+    return hash({
+      perfiles: this.store.findAll(&#x27;magistrate&#x27;),
+      diputados: this.store.findAll(&#x27;commission-deputies&#x27;),
+      config: spreadsheet.fetchConfig(&#x27;configuracion&#x27;)
+        .then((configuracion) =&gt; {
+          let configObject = EmberObject.create();
+
+          A(configuracion).forEach((item) =&gt; {
+            configObject.set(item.key, item.value);
+          });
+
+          return configObject;
+        }),
+      navbarLinks: spreadsheet.fetchConfig(&#x27;navbar-links&#x27;)
+        .then((links) =&gt; {
+          return A(links).filter((link) =&gt; {
+            return _routing.hasRoute(link.route);
+          });
+        })
+    });
+  },
+
+  /**
+   * Acciones: selectPerfil.
+   * @property actions
+   * @type {Object}
+   */
+  actions: {
+    // Utilizado para seleccionar un perfil en la caja de busqueda.
+    selectPerfil(candidato) {
+      this.transitionTo(&#x27;perfil&#x27;, candidato.get(&#x27;id&#x27;));
+    }
+  }
+
+});
+
+    </pre>
+</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/vendor/prettify/prettify-min-c3b43404676b1f35c7a17dca1046d138.js"></script>
+    <script>prettyPrint();</script>
+    <script src="../assets/vendor/jquery/jquery.min-bc8ef4cd0cd640456b5bf20187cf8b1c.js"></script>
+    <script src="../assets/vendor/jquery-ui/jquery-ui.min-9ed2deabeed939d607f3e897c0289e33.js"></script>
+    <script src="../assets/vendor/bootstrap/js/bootstrap-a41e04d9b72a5dd641c23b9e9aba8c54.js"></script>
+    <script src="../assets/vendor/github-slugger/slugger-7661fd7882796442fad8dbed29b942c7.js"></script>
+    <script src="../assets/js/yuidoc-bootstrap-cd68f0df16e5ebcaf12ec5f5ad828e46.js"></script>
+</body>
+</html>

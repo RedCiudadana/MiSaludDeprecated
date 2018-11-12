@@ -1,0 +1,928 @@
+{
+    "project": {
+        "name": "MiGuatemala",
+        "description": "MiGuatemala es una aplicación destinada a la transparencia en materia de funcionarios públicos.",
+        "url": "https://github.com/RedCiudadana/MiGuatemala",
+        "logo": "http://redciudadana.org/wp-content/uploads/2018/05/red-logo-01.png",
+        "primaryColor": "#2cd3b4",
+        "version": "0.4.2.e7eb2faf"
+    },
+    "files": {
+        "app/adapters/spreadsheet.js": {
+            "name": "app/adapters/spreadsheet.js",
+            "modules": {},
+            "classes": {
+                "Adapter.Spreadsheet": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "app/controllers/perfil/frente-a-frente.js": {
+            "name": "app/controllers/perfil/frente-a-frente.js",
+            "modules": {},
+            "classes": {},
+            "fors": {},
+            "namespaces": {}
+        },
+        "app/initializers/main.js": {
+            "name": "app/initializers/main.js",
+            "modules": {},
+            "classes": {
+                "Initializer.Main": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "app/models/commission-deputies.js": {
+            "name": "app/models/commission-deputies.js",
+            "modules": {},
+            "classes": {
+                "Model.Commision-deputies": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "app/models/magistrate.js": {
+            "name": "app/models/magistrate.js",
+            "modules": {},
+            "classes": {
+                "Model.Magistrate": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "app/models/partido.js": {
+            "name": "app/models/partido.js",
+            "modules": {},
+            "classes": {
+                "Model.Party": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "app/models/profile.js": {
+            "name": "app/models/profile.js",
+            "modules": {},
+            "classes": {
+                "Model.Profile": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "app/routes/application.js": {
+            "name": "app/routes/application.js",
+            "modules": {},
+            "classes": {
+                "Route.Application": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "app/routes/index.js": {
+            "name": "app/routes/index.js",
+            "modules": {},
+            "classes": {
+                "Route.Index": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "app/routes/perfil.js": {
+            "name": "app/routes/perfil.js",
+            "modules": {},
+            "classes": {
+                "Route.Perfil": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        },
+        "app/services/spreadsheets.js": {
+            "name": "app/services/spreadsheets.js",
+            "modules": {},
+            "classes": {
+                "Service.Spreadsheets": 1
+            },
+            "fors": {},
+            "namespaces": {}
+        }
+    },
+    "modules": {},
+    "classes": {
+        "Adapter.Spreadsheet": {
+            "name": "Adapter.Spreadsheet",
+            "shortname": "Adapter.Spreadsheet",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "app/adapters/spreadsheet.js",
+            "line": 5,
+            "description": "Nos permite utilizar 'store' con nuestro servicio 'spreadsheets'.\nEn otras palabras implementamos EmberData con spreadsheets.",
+            "extends": "DS.Adapter"
+        },
+        "Initializer.Main": {
+            "name": "Initializer.Main",
+            "shortname": "Initializer.Main",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "app/initializers/main.js",
+            "line": 4,
+            "description": "Oculta las depreciaciones."
+        },
+        "Model.Commision-deputies": {
+            "name": "Model.Commision-deputies",
+            "shortname": "Model.Commision-deputies",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "app/models/commission-deputies.js",
+            "line": 5,
+            "description": "Model para diputados de la comisión.",
+            "extends": "Model.Profile"
+        },
+        "Model.Magistrate": {
+            "name": "Model.Magistrate",
+            "shortname": "Model.Magistrate",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "app/models/magistrate.js",
+            "line": 5,
+            "description": "Modelo para magistrados",
+            "extends": "Model.Profile"
+        },
+        "Model.Party": {
+            "name": "Model.Party",
+            "shortname": "Model.Party",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "app/models/partido.js",
+            "line": 4,
+            "description": "Model de partido político."
+        },
+        "Model.Profile": {
+            "name": "Model.Profile",
+            "shortname": "Model.Profile",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "app/models/profile.js",
+            "line": 5,
+            "description": "Modelo para personas, usalmente se extiende esta clase a otras según el proyecto."
+        },
+        "Route.Application": {
+            "name": "Route.Application",
+            "shortname": "Route.Application",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "app/routes/application.js",
+            "line": 11,
+            "description": "Serializa los modelos y obtiene perfiles, config, navbarLinks, a traves del servicio: spreadsheets."
+        },
+        "Route.Index": {
+            "name": "Route.Index",
+            "shortname": "Route.Index",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "app/routes/index.js",
+            "line": 4,
+            "description": "Ruta principal '/'."
+        },
+        "Route.Perfil": {
+            "name": "Route.Perfil",
+            "shortname": "Route.Perfil",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "app/routes/perfil.js",
+            "line": 6,
+            "description": "Perfil Route"
+        },
+        "Service.Spreadsheets": {
+            "name": "Service.Spreadsheets",
+            "shortname": "Service.Spreadsheets",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "file": "app/services/spreadsheets.js",
+            "line": 9,
+            "description": "Servicios para obtener datos desde /static-files/ or Google's spreadsheets, según la configuración en 'environment'.\nPara generar los archivos ejecutar 'node build-data.js'. Antes revisar la documentación en la carpeta 'Documentation'.\nPreferiblemente usar 'static-files' porque el 'live-mode' es muy lento por la forma que obtiene los datos.",
+            "example": [
+                "\nimport { inject as service } from '@ember/service';\nspreadsheets: service()"
+            ]
+        }
+    },
+    "elements": {},
+    "classitems": [
+        {
+            "file": "app/adapters/spreadsheet.js",
+            "line": 14,
+            "type": "Service",
+            "class": "Adapter.Spreadsheet"
+        },
+        {
+            "file": "app/adapters/spreadsheet.js",
+            "line": 19,
+            "description": "Returna todos los datos de un modelo.",
+            "params": [
+                {
+                    "name": "type",
+                    "description": "El modelo que queremos usar.",
+                    "type": "Model"
+                }
+            ],
+            "return": {
+                "description": "EmberRecord  Todos los datos de un modelo."
+            },
+            "class": "Adapter.Spreadsheet"
+        },
+        {
+            "file": "app/adapters/spreadsheet.js",
+            "line": 28,
+            "description": "Utiliza findAll y luego filtra según el id.",
+            "params": [
+                {
+                    "name": "type",
+                    "description": "[description]",
+                    "type": "Model"
+                },
+                {
+                    "name": "id",
+                    "description": "[description]",
+                    "type": "Integer"
+                }
+            ],
+            "return": {
+                "description": "Una clase del modelo del objeto si coincidio alguno o 'null'.",
+                "type": "Object"
+            },
+            "class": "Adapter.Spreadsheet"
+        },
+        {
+            "file": "app/controllers/perfil/frente-a-frente.js",
+            "line": 6,
+            "description": "Hash",
+            "class": "Initializer.Main"
+        },
+        {
+            "file": "app/initializers/main.js",
+            "line": 11,
+            "description": "Herramienta para generar logs.",
+            "type": "debug",
+            "class": "Initializer.Main"
+        },
+        {
+            "file": "app/initializers/main.js",
+            "line": 18,
+            "description": "Oculta las depreciaciones.Referencia: https://guides.emberjs.com/v3.4.0/configuring-ember/handling-deprecations/.",
+            "itemtype": "method",
+            "name": "registerDeprecationHandler",
+            "class": "Initializer.Main"
+        },
+        {
+            "file": "app/models/commission-deputies.js",
+            "line": 15,
+            "description": "Cargo",
+            "type": "{String}",
+            "class": "Model.Commision-deputies"
+        },
+        {
+            "file": "app/models/commission-deputies.js",
+            "line": 21,
+            "description": "Institución",
+            "type": "{String}",
+            "class": "Model.Commision-deputies"
+        },
+        {
+            "file": "app/models/commission-deputies.js",
+            "line": 27,
+            "description": "Profesión",
+            "type": "{String}",
+            "class": "Model.Commision-deputies"
+        },
+        {
+            "file": "app/models/commission-deputies.js",
+            "line": 33,
+            "description": "Educación",
+            "type": "{String}",
+            "class": "Model.Commision-deputies"
+        },
+        {
+            "file": "app/models/commission-deputies.js",
+            "line": 42,
+            "description": "Partido postulante, con el que obtuvo el cargo o fue elegido.",
+            "itemtype": "property",
+            "name": "partidoPostulante",
+            "type": "partido",
+            "class": "Model.Commision-deputies"
+        },
+        {
+            "file": "app/models/commission-deputies.js",
+            "line": 50,
+            "description": "Partido actual.",
+            "itemtype": "property",
+            "name": "partidoActual",
+            "type": "partido",
+            "class": "Model.Commision-deputies"
+        },
+        {
+            "file": "app/models/magistrate.js",
+            "line": 14,
+            "description": "Profesión.",
+            "itemtype": "property",
+            "name": "profesion",
+            "type": "String",
+            "class": "Model.Magistrate"
+        },
+        {
+            "file": "app/models/magistrate.js",
+            "line": 22,
+            "description": "Grado de educación.",
+            "itemtype": "property",
+            "name": "educacion",
+            "type": "String",
+            "class": "Model.Magistrate"
+        },
+        {
+            "file": "app/models/magistrate.js",
+            "line": 30,
+            "description": "Biografía.",
+            "itemtype": "property",
+            "name": "biografia",
+            "type": "String",
+            "class": "Model.Magistrate"
+        },
+        {
+            "file": "app/models/magistrate.js",
+            "line": 38,
+            "description": "Desempeño.",
+            "itemtype": "property",
+            "name": "desempenio",
+            "type": "String",
+            "class": "Model.Magistrate"
+        },
+        {
+            "file": "app/models/magistrate.js",
+            "line": 46,
+            "description": "Experiencia profesional.",
+            "itemtype": "property",
+            "name": "experienciaProfesional",
+            "type": "String",
+            "class": "Model.Magistrate"
+        },
+        {
+            "file": "app/models/magistrate.js",
+            "line": 54,
+            "description": "Información general. Campos para mostrar en información general. Son serializados después.",
+            "itemtype": "property",
+            "name": "informacionGeneral",
+            "type": "informacion-general",
+            "class": "Model.Magistrate"
+        },
+        {
+            "file": "app/models/magistrate.js",
+            "line": 62,
+            "description": "Recuadros. Otra modularidad de frente a frente.",
+            "itemtype": "property",
+            "name": "recuadros",
+            "type": "frente-a-frente",
+            "class": "Model.Magistrate"
+        },
+        {
+            "file": "app/models/magistrate.js",
+            "line": 70,
+            "description": "Campos a evaluar en la modularidad frente a frente. Son serializados después.",
+            "itemtype": "property",
+            "name": "frenteAFrente",
+            "type": "frente-a-frente",
+            "class": "Model.Magistrate"
+        },
+        {
+            "file": "app/models/magistrate.js",
+            "line": 78,
+            "description": "Institución",
+            "itemtype": "property",
+            "name": "institucion",
+            "type": "String",
+            "class": "Model.Magistrate"
+        },
+        {
+            "file": "app/models/magistrate.js",
+            "line": 86,
+            "description": "Plan de trabajo",
+            "itemtype": "property",
+            "name": "planTrabajo",
+            "type": "String",
+            "class": "Model.Magistrate"
+        },
+        {
+            "file": "app/models/magistrate.js",
+            "line": 94,
+            "description": "Proyección",
+            "itemtype": "property",
+            "name": "proyeccion",
+            "type": "String",
+            "class": "Model.Magistrate"
+        },
+        {
+            "file": "app/models/magistrate.js",
+            "line": 104,
+            "description": "Foto del partido.",
+            "itemtype": "property",
+            "name": "fotoPartido",
+            "type": "String",
+            "class": "Model.Magistrate"
+        },
+        {
+            "file": "app/models/partido.js",
+            "line": 12,
+            "description": "Código - Abreviación",
+            "itemtype": "property",
+            "name": "codigo",
+            "class": "Model.Party"
+        },
+        {
+            "file": "app/models/partido.js",
+            "line": 19,
+            "description": "Nombre completo",
+            "itemtype": "property",
+            "name": "nombreCompleto",
+            "type": "String",
+            "class": "Model.Party"
+        },
+        {
+            "file": "app/models/partido.js",
+            "line": 27,
+            "description": "Nombre corto",
+            "itemtype": "property",
+            "name": "nombre",
+            "type": "String",
+            "class": "Model.Party"
+        },
+        {
+            "file": "app/models/partido.js",
+            "line": 35,
+            "description": "Perfil de Facebook, la URL.",
+            "itemtype": "property",
+            "name": "fb",
+            "type": "String",
+            "class": "Model.Party"
+        },
+        {
+            "file": "app/models/partido.js",
+            "line": 43,
+            "description": "Perfil de Twitter, la URL.",
+            "itemtype": "property",
+            "name": "tw",
+            "type": "String",
+            "class": "Model.Party"
+        },
+        {
+            "file": "app/models/partido.js",
+            "line": 51,
+            "description": "Logo",
+            "itemtype": "property",
+            "name": "logo",
+            "type": "String",
+            "class": "Model.Party"
+        },
+        {
+            "file": "app/models/profile.js",
+            "line": 13,
+            "description": "Nombre de la persona.",
+            "itemtype": "property",
+            "name": "name",
+            "type": "String",
+            "class": "Model.Profile"
+        },
+        {
+            "file": "app/models/profile.js",
+            "line": 21,
+            "description": "Edad de la persona.",
+            "itemtype": "property",
+            "name": "edad",
+            "type": "String",
+            "class": "Model.Profile"
+        },
+        {
+            "file": "app/models/profile.js",
+            "line": 29,
+            "description": "URL de la foto de la persona.",
+            "itemtype": "property",
+            "name": "fotoURL",
+            "type": "String",
+            "class": "Model.Profile"
+        },
+        {
+            "file": "app/models/profile.js",
+            "line": 37,
+            "description": "Correo electrónico - Email.",
+            "itemtype": "property",
+            "name": "email",
+            "type": "String",
+            "class": "Model.Profile"
+        },
+        {
+            "file": "app/models/profile.js",
+            "line": 45,
+            "description": "Perfil de Facebook, la URL.",
+            "itemtype": "property",
+            "name": "fb",
+            "type": "String",
+            "class": "Model.Profile"
+        },
+        {
+            "file": "app/models/profile.js",
+            "line": 53,
+            "description": "Perfil de Twitter, la URL.",
+            "itemtype": "property",
+            "name": "tw",
+            "type": "String",
+            "class": "Model.Profile"
+        },
+        {
+            "file": "app/models/profile.js",
+            "line": 61,
+            "description": "Dirrección.",
+            "itemtype": "property",
+            "name": "dirreccion",
+            "type": "String",
+            "class": "Model.Profile"
+        },
+        {
+            "file": "app/models/profile.js",
+            "line": 69,
+            "description": "Número de telefono.",
+            "itemtype": "property",
+            "name": "telefono",
+            "type": "String",
+            "class": "Model.Profile"
+        },
+        {
+            "file": "app/models/profile.js",
+            "line": 77,
+            "description": "Sexo.",
+            "itemtype": "property",
+            "name": "sexo",
+            "type": "String",
+            "class": "Model.Profile"
+        },
+        {
+            "file": "app/models/profile.js",
+            "line": 85,
+            "description": "Estado de la persona según el proceso que se lleva acabo del proyecto. Ejemplo una elección sería \"En proceso\" o \"Descalificado\".",
+            "itemtype": "property",
+            "name": "estado",
+            "type": "String",
+            "class": "Model.Profile"
+        },
+        {
+            "file": "app/models/profile.js",
+            "line": 95,
+            "description": "Foto del perfil.",
+            "itemtype": "property",
+            "name": "fotoPerfil",
+            "type": "String",
+            "default": "\"images/Magistrado.jpg\"",
+            "class": "Model.Profile"
+        },
+        {
+            "file": "app/models/profile.js",
+            "line": 110,
+            "description": "Selector para Isotope. Genera un 'String' con etiquetas para poder filtrar elementos desde el HTML con Isotope.",
+            "itemtype": "property",
+            "name": "selector",
+            "type": "String",
+            "default": "\"\"",
+            "class": "Model.Profile"
+        },
+        {
+            "file": "app/models/profile.js",
+            "line": 139,
+            "description": "Identificador de Disqus",
+            "itemtype": "property",
+            "name": "disqusIdentifier",
+            "type": "String",
+            "default": "\"perfil-0\"",
+            "class": "Model.Profile"
+        },
+        {
+            "file": "app/routes/application.js",
+            "line": 18,
+            "description": "Servicio para obtener datos, ya sea desde 'static-files' o las hojas de datos públicadas.",
+            "itemtype": "property",
+            "name": "spreadsheets",
+            "type": "Service",
+            "class": "Route.Application"
+        },
+        {
+            "file": "app/routes/application.js",
+            "line": 26,
+            "description": "Servicio de rutas. Utilizado para comprobar que existan ciertas rutas que son indicadas en la configuración (navbarLinks).",
+            "itemtype": "property",
+            "name": "_routing",
+            "type": "Service",
+            "class": "Route.Application"
+        },
+        {
+            "file": "app/routes/application.js",
+            "line": 34,
+            "description": "Obtiene los datos de archivos. Utilizado para obtener las URLs de las hojas de calculo publicadas.",
+            "itemtype": "property",
+            "name": "ajax",
+            "type": "Service",
+            "class": "Route.Application"
+        },
+        {
+            "file": "app/routes/application.js",
+            "line": 42,
+            "description": "Establecer la 'URL' de los datos y configuraciones en el servicio spreadsheet. Además procesar los campos de serialización y serializar.",
+            "itemtype": "method",
+            "name": "beforeModel",
+            "class": "Route.Application"
+        },
+        {
+            "file": "app/routes/application.js",
+            "line": 70,
+            "description": "Setear la información general del perfil mediante la parametrización\nproveniente de la configuración",
+            "class": "Route.Application"
+        },
+        {
+            "file": "app/routes/application.js",
+            "line": 91,
+            "description": "Setear la información de recuadros del perfil mediante la parametrización\nproveniente de la configuración",
+            "class": "Route.Application"
+        },
+        {
+            "file": "app/routes/application.js",
+            "line": 112,
+            "description": "Setear los campos a utilizar en la funcionalidad de frente-a-frente",
+            "class": "Route.Application"
+        },
+        {
+            "file": "app/routes/application.js",
+            "line": 133,
+            "description": "Setear la información general del perfil:comission-deputies mediante la parametrización\nproveniente de la configuración",
+            "class": "Route.Application"
+        },
+        {
+            "file": "app/routes/application.js",
+            "line": 156,
+            "description": "Datos principales de la aplicación.",
+            "itemtype": "method",
+            "name": "model",
+            "return": {
+                "description": "Perfiles, config, navbarLinks.",
+                "type": "Object"
+            },
+            "class": "Route.Application"
+        },
+        {
+            "file": "app/routes/application.js",
+            "line": 188,
+            "description": "Acciones: selectPerfil.",
+            "itemtype": "property",
+            "name": "actions",
+            "type": "{Object}",
+            "class": "Route.Application"
+        },
+        {
+            "file": "app/routes/index.js",
+            "line": 11,
+            "description": "Extiende el modelo de application.",
+            "itemtype": "method",
+            "name": "model",
+            "return": {
+                "description": "Objeto con los datos de Route.Application.model().",
+                "type": "Object"
+            },
+            "class": "Route.Index"
+        },
+        {
+            "file": "app/routes/perfil.js",
+            "line": 13,
+            "description": "Spreadsheets Service",
+            "itemtype": "property",
+            "name": "spreadsheets",
+            "type": "Service",
+            "class": "Route.Perfil"
+        },
+        {
+            "file": "app/routes/perfil.js",
+            "line": 21,
+            "description": "Routing Service",
+            "itemtype": "property",
+            "name": "_routing",
+            "type": "Service",
+            "class": "Route.Perfil"
+        },
+        {
+            "file": "app/routes/perfil.js",
+            "line": 31,
+            "description": "Model hook. Obtiene toda la información de un perfil según el id que obtiene de 'params'.",
+            "itemtype": "method",
+            "name": "model",
+            "return": {
+                "description": "Datos del perfil según el id. Algunos campos son: config, perfil, institucion, partidoActual, perfilInformacionGeneralConfiguracion, perfiles, documentosDisponibles, datosTablaGradacion, totalPuntajeGradacion, perfilFuncionalidades, entre otros.",
+                "type": "Object"
+            },
+            "class": "Route.Perfil"
+        },
+        {
+            "file": "app/routes/perfil.js",
+            "line": 92,
+            "description": "Levanta un controlador y asigna model.config.perfilFuncionalidades = model.perfilFuncionalidades.",
+            "itemtype": "method",
+            "name": "setupController",
+            "params": [
+                {
+                    "name": "controller",
+                    "description": "Clase controller.",
+                    "type": "[type]"
+                },
+                {
+                    "name": "model",
+                    "description": "Modelo de esta ruta.",
+                    "type": "[type]"
+                }
+            ],
+            "class": "Route.Perfil"
+        },
+        {
+            "file": "app/routes/perfil.js",
+            "line": 105,
+            "description": "Acciones: didTransition.",
+            "itemtype": "property",
+            "name": "actions",
+            "type": "{Object}",
+            "class": "Route.Perfil"
+        },
+        {
+            "file": "app/services/spreadsheets.js",
+            "line": 23,
+            "description": "Ajax Service",
+            "itemtype": "property",
+            "name": "ajax",
+            "type": "Service",
+            "class": "Service.Spreadsheets"
+        },
+        {
+            "file": "app/services/spreadsheets.js",
+            "line": 31,
+            "description": "URL de la hoja de datos (perfiles, partidos, etc). Luego se obtiene de 'environment'",
+            "itemtype": "property",
+            "name": "dataSpreadsheetUrl",
+            "type": "String",
+            "default": "null",
+            "class": "Service.Spreadsheets"
+        },
+        {
+            "file": "app/services/spreadsheets.js",
+            "line": 40,
+            "description": "URL de la hoja de configuraciones (aspecto de la pagina, campos de perfiles, etc). Luego se obtiene de 'environment'",
+            "itemtype": "property",
+            "name": "configSpreadsheetUrl",
+            "type": "String",
+            "default": "null",
+            "class": "Service.Spreadsheets"
+        },
+        {
+            "file": "app/services/spreadsheets.js",
+            "line": 51,
+            "description": "Obtiene datos de una hoja especifica.",
+            "itemtype": "method",
+            "name": "fetch",
+            "params": [
+                {
+                    "name": "worksheetName",
+                    "description": "- Nombre de la hoja.",
+                    "type": "String"
+                },
+                {
+                    "name": "spreadsheetKey",
+                    "description": "- Puede ser 'data' o 'config' especifica la dirrección (archivo de google's spredsheet publicado) para obtener datos. Útil solamente cuando no se usa 'static-files'.",
+                    "type": "String",
+                    "optional": true,
+                    "optdefault": "'data'"
+                }
+            ],
+            "class": "Service.Spreadsheets"
+        },
+        {
+            "file": "app/services/spreadsheets.js",
+            "line": 60,
+            "description": "MODO ESTÁTICO",
+            "class": "Service.Spreadsheets"
+        },
+        {
+            "file": "app/services/spreadsheets.js",
+            "line": 79,
+            "description": "MODO 'LIVE'",
+            "class": "Service.Spreadsheets"
+        },
+        {
+            "file": "app/services/spreadsheets.js",
+            "line": 111,
+            "description": "Wrap de fetch que tiene 'spreadsheetKey' como 'config'.",
+            "itemtype": "method",
+            "name": "fetchConfig",
+            "params": [
+                {
+                    "name": "worksheetName",
+                    "description": "Nombre de la hoja.",
+                    "type": "String"
+                }
+            ],
+            "return": {
+                "description": "Promesa con los datos.",
+                "type": "Promise<string[], MyError>"
+            },
+            "class": "Service.Spreadsheets"
+        }
+    ],
+    "warnings": [
+        {
+            "message": "Missing item type",
+            "line": " app/adapters/spreadsheet.js:14"
+        },
+        {
+            "message": "Missing item type\nReturna todos los datos de un modelo.",
+            "line": " app/adapters/spreadsheet.js:19"
+        },
+        {
+            "message": "Missing item type\nUtiliza findAll y luego filtra según el id.",
+            "line": " app/adapters/spreadsheet.js:28"
+        },
+        {
+            "message": "Missing item type\nHash",
+            "line": " app/controllers/perfil/frente-a-frente.js:6"
+        },
+        {
+            "message": "Missing item type\nHerramienta para generar logs.",
+            "line": " app/initializers/main.js:11"
+        },
+        {
+            "message": "Missing item type\nCargo",
+            "line": " app/models/commission-deputies.js:15"
+        },
+        {
+            "message": "Missing item type\nInstitución",
+            "line": " app/models/commission-deputies.js:21"
+        },
+        {
+            "message": "Missing item type\nProfesión",
+            "line": " app/models/commission-deputies.js:27"
+        },
+        {
+            "message": "Missing item type\nEducación",
+            "line": " app/models/commission-deputies.js:33"
+        },
+        {
+            "message": "Missing item type\nSetear la información general del perfil mediante la parametrización\nproveniente de la configuración",
+            "line": " app/routes/application.js:70"
+        },
+        {
+            "message": "Missing item type\nSetear la información de recuadros del perfil mediante la parametrización\nproveniente de la configuración",
+            "line": " app/routes/application.js:91"
+        },
+        {
+            "message": "Missing item type\nSetear los campos a utilizar en la funcionalidad de frente-a-frente",
+            "line": " app/routes/application.js:112"
+        },
+        {
+            "message": "Missing item type\nSetear la información general del perfil:comission-deputies mediante la parametrización\nproveniente de la configuración",
+            "line": " app/routes/application.js:133"
+        },
+        {
+            "message": "Missing item type\nMODO ESTÁTICO",
+            "line": " app/services/spreadsheets.js:60"
+        },
+        {
+            "message": "Missing item type\nMODO 'LIVE'",
+            "line": " app/services/spreadsheets.js:79"
+        }
+    ]
+}

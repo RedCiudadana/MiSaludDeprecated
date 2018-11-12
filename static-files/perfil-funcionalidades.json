@@ -1,0 +1,16 @@
+[
+  {
+    "route": "perfil.index",
+    "link": "",
+    "name": "Perfil",
+    "iconClass": "fa fa-user color-grey",
+    "title": "Perfil"
+  },
+  {
+    "route": "perfil.frente-a-frente",
+    "link": "",
+    "name": "Frente a Frente",
+    "iconClass": "fa fa-bolt color-yellow",
+    "title": "Compara aquí la experiencia profesional, académica y trayectoria de los diputados."
+  }
+]

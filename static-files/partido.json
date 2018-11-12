@@ -1,0 +1,74 @@
+[
+  {
+    "id": "1",
+    "nombreCompleto": "Fnatic",
+    "nombreCorto": "FNC",
+    "fb": "www.facebook.com/1",
+    "tw": "www.twitter.com/1",
+    "logo": ""
+  },
+  {
+    "id": "2",
+    "nombreCompleto": "Royal Never Give Up",
+    "nombreCorto": "RNG",
+    "fb": "www.facebook.com/2",
+    "tw": "www.twitter.com/2",
+    "logo": ""
+  },
+  {
+    "id": "3",
+    "nombreCompleto": "Cloud9",
+    "nombreCorto": "C9",
+    "fb": "www.facebook.com/3",
+    "tw": "www.twitter.com/3",
+    "logo": ""
+  },
+  {
+    "id": "4",
+    "nombreCompleto": "Invictus Gaming",
+    "nombreCorto": "ING",
+    "fb": "www.facebook.com/4",
+    "tw": "www.twitter.com/4",
+    "logo": ""
+  },
+  {
+    "id": "5",
+    "nombreCompleto": "Gaming 2",
+    "nombreCorto": "G2",
+    "fb": "www.facebook.com/5",
+    "tw": "www.twitter.com/5",
+    "logo": ""
+  },
+  {
+    "id": "6",
+    "nombreCompleto": "SK Telecom T1",
+    "nombreCorto": "SKT",
+    "fb": "www.facebook.com/6",
+    "tw": "www.twitter.com/6",
+    "logo": ""
+  },
+  {
+    "id": "7",
+    "nombreCompleto": "KTRooster",
+    "nombreCorto": "KT",
+    "fb": "www.facebook.com/7",
+    "tw": "www.twitter.com/7",
+    "logo": ""
+  },
+  {
+    "id": "8",
+    "nombreCompleto": "Afreeca",
+    "nombreCorto": "AFS",
+    "fb": "www.facebook.com/8",
+    "tw": "www.twitter.com/8",
+    "logo": ""
+  },
+  {
+    "id": "9",
+    "nombreCompleto": "Infinity",
+    "nombreCorto": "INF",
+    "fb": "www.facebook.com/9",
+    "tw": "www.twitter.com/9",
+    "logo": ""
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "field": "partidoactual",
+    "label": "Partido al que representa:"
+  },
+  {
+    "field": "partidopostulante",
+    "label": "Partido postulante:"
+  },
+  {
+    "field": "distrito",
+    "label": "Distrito al que representa:"
+  },
+  {
+    "field": "cargo",
+    "label": "Cargo:"
+  },
+  {
+    "field": "nacimiento",
+    "label": "Fecha de nacimiento:"
+  }
+]
