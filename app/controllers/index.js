@@ -2,11 +2,16 @@ import $ from 'jquery';
 import Controller from '@ember/controller';
 import { computed } from '@ember/object';
 
+
+const options = ['Departamento', 'Guatemala'];
+
 export default Controller.extend({
 
   selectedValue: null,
 
-  options: ['Departamento', 'Guatemala'],
+  options,
+
+  profileSelected: options[0],
 
   currentSelector: computed(
     'esMujer',
@@ -57,6 +62,9 @@ export default Controller.extend({
       $container.isotope({filter: this.get('currentSelector')});
 
       return false;
+    },
+
+    selectProfile() {
     }
   }
 });

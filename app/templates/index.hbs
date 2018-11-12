@@ -19,6 +19,18 @@
 <div class="bg-light w-100">
   <div class="container container-padding">
     <div class="row">
+      <div class="col-8 offset-2">
+        {{#power-select
+          options=options
+          onchange=(action "selectProfile")
+          selected=profileSelected
+          as |name|
+        }}
+          {{name}}
+        {{/power-select}}
+      </div>
+    </div>
+    <div class="row">
       <div class="col-10 offset-1 col-md-4 offset-md-2 filters">
         {{!-- Departamento --}}
         {{one-way-select selectedValue
