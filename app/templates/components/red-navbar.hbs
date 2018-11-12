@@ -1,4 +1,4 @@
-{{#bs-navbar backgroundColor="light" type="light" position="sticky-top" fluid=false as |navbar|}}
+{{#bs-navbar backgroundColor="white" type="light" position="sticky-top" fluid=false as |navbar|}}
   <div class="navbar-header">
     {{navbar.toggle}}
 
@@ -13,15 +13,24 @@
 
   {{#navbar.content}}
     {{#navbar.nav justified=true type="pills" class="ml-auto" as |nav|}}
+      {{!-- Navbar links --}}
       {{#each model.navbarLinks as |link|}}
         {{#nav.item active=false class="mx-2"}}{{#link-to link.route}}{{link.title}}{{/link-to}}{{/nav.item}}
       {{/each}}
 
-      {{!-- Partidos MiGuatemala, borrar en producción --}}
-      {{#nav.item active=false class="mx-2"}}{{#link-to "partidos"}}Partidos{{/link-to}}{{/nav.item}}
+      {{!-- Twitter --}}
+      {{#nav.item active=false}}
+        <a href="https://twitter.com/RedxGuate" class="border-0 social fb">
+          <img src="mi-guatemala/img/icon-fb-gray.png" alt="">
+        </a>
+      {{/nav.item}}
 
-      {{!-- API MiGuatemala, borrar en producción --}}
-      {{#nav.item active=false class="mx-2"}}<a href="docs/index.html">API</a>{{/nav.item}}
+      {{!-- Facebook --}}
+      {{#nav.item active=false}}
+        <a href="https://twitter.com/RedxGuate" class="border-0 social tw">
+          <img src="mi-guatemala/img/icon-tw-gray.png" alt="">
+        </a>
+      {{/nav.item}}
 
     {{/navbar.nav}}
   {{/navbar.content}}

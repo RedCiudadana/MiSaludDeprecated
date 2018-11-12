@@ -4,10 +4,82 @@
     src="{{rootURL}}/img/slider.png"
     alt=""
     width="100%"
-    class="mt-5"
-    id="start">
+    class="42vw"
+    id="start"
+  >
   <img
     src="{{rootURL}}/img/ambulance.png"
     alt="Ambulancia"
-    class="ambulance animate-to-left">
+    class="ambulance animate-to-left"
+  >
+</div>
+{{!-- Light container --}}
+<div class="container bg-light">
+  <div class="row">
+    <div class="col-10 offset-1 filters">
+      {{!-- Departamento --}}
+      {{one-way-select selectedValue
+        options=options
+        update=(action (mut selectedValue))
+        class="form-control"
+      }}
+      {{!-- Hospital/Centro de salud --}}
+      {{one-way-select selectedValue
+        options=options
+        update=(action (mut selectedValue))
+        class="form-control"
+      }}
+    </div>
+  </div>
+</div>
+{{!-- White container --}}
+<div class="container">
+  <div class="row">
+    <div class="col-10 offset-1 border preview-hospital">
+      <div class="row text-center">
+        <div class="col-12">
+          <img
+            src="img/image425x425.png"
+            alt="Imagen de nombre hospital"
+            width="80%"
+          >
+        </div>
+        <div class="col-12">
+          <h6>Hospital San Juan de Dios</h6>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas necessitatibus, laudantium debitis possimus.
+          </p>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-success">
+            Más información
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-10 offset-1 border preview-hospital">
+      <div class="row text-center">
+        <div class="col-12">
+          <img
+            src="img/image425x425.png"
+            alt="Imagen de nombre hospital"
+            width="80%"
+          >
+        </div>
+        <div class="col-12">
+          <h6>Hospital San Juan de Dios</h6>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas necessitatibus, laudantium debitis possimus.
+          </p>
+        </div>
+        <div class="col-12">
+          <button class="btn btn-success">
+            Más información
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

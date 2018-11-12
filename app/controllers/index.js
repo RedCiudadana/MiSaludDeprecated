@@ -4,6 +4,10 @@ import { computed } from '@ember/object';
 
 export default Controller.extend({
 
+  selectedValue: null,
+
+  options: ['alfa', 'omega'],
+
   currentSelector: computed(
     'esMujer',
     'esHombre',

@@ -11,10 +11,34 @@ $navbar-color: #3a3a3a;
 
 $footer-background-color: #202d3e;
 $footer-color: #ffffff;
-$border-radius: 10px;
+$border-radius: 5px;
 
 @import "ember-bootstrap/bootstrap";
 @import "mi-guatemala";
+
+// Preview hospital / Portfolio
+.preview-hospital {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    // Space between others preview-hospital components
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    img {
+        margin-bottom: 20px;
+    }
+}
+
+// Filters and search
+.filters {
+    .form-control {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+
+// ANIMATIONS
 
 #wrapper-slider {
     width: 100%;
@@ -23,6 +47,26 @@ $border-radius: 10px;
 
 .ambulance {
     position: absolute;
-    top: 41.5vw;
+    height: 4vw;
+    width: auto;
+    margin-top: 90px;
+    top: 38vw;
     right: 0%;
 }
+
+.animate-to-left {
+    position: absolute;
+    animation-direction: normal;
+    animation-name: move-to-left;
+    animation-duration: 10s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+}
+
+/* Standard syntax */
+@keyframes move-to-left {
+    0%   {top: 38vw; right: 0%;}
+    100% {top: 38vw; right: 100%;}
+}
+
+@import "ember-power-select";

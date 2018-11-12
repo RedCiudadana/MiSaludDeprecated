@@ -7,6 +7,7 @@
 /**
  * Tabla de contenidos
  * 
+ * Colors utils
  * Navbar
  * Footer
  * Perfil
@@ -19,6 +20,10 @@
  * Links
  * Panel
  */
+
+// Colors utils
+$fb-color: #3B5998;
+$tw-color: #1DA1F2;
 
 @font-face {
     font-family: 'MyFont';
@@ -39,10 +44,41 @@
 
 // Navbar
 
-.navbar ul li a {
-    color: $navbar-color;
-}
+.navbar {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 
+    // Button style
+    ul li a {
+        color: $navbar-color;
+        border: 1px solid #ddddddff;
+        border-radius: 20px;
+        padding: 10px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    // Hover links
+    ul li a:hover {
+        background-color: $info;
+        color: white !important;
+    }
+
+    // Social links - facebook - twitter
+    .social {
+        padding: 8px;
+        border-radius: 25px;
+    }
+
+    .fb:hover {
+        background-color: $fb-color;
+    }
+
+    .tw:hover {
+        background-color: $tw-color;
+    }
+}
 // Footer
 
 #footer {
@@ -256,19 +292,4 @@ i {
     .body {
         padding: 15px;
     }
-}
-
-.animate-to-left {
-    position: absolute;
-    animation-direction: normal;
-    animation-name: move-to-left;
-    animation-duration: 10s;
-    animation-fill-mode: forwards;
-    animation-iteration-count: 1;
-}
-
-/* Standard syntax */
-@keyframes move-to-left {
-    0%   {top: 41.5vw; right: 0%;}
-    100% {top: 41.5vw; right: 100%;}
 }

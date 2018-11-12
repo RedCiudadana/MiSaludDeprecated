@@ -31,9 +31,9 @@ module.exports = function(environment) {
 
     metricsAdapters: [{
         name: 'GoogleAnalytics',
-        environments: ['production', 'development'],
+        environments: ['production'],
         config: {
-          id: 'UA-XXXX-Y',
+          id: 'UA-129113306-1',
           // Use verbose tracing of GA events
           trace: environment === 'development',
           // Ensure development env hits aren't sent to GA
@@ -62,7 +62,7 @@ module.exports = function(environment) {
     },
 
     disqus: {
-      shortname: null
+      shortname: 'tejiendo-salud-gt'
     },
 
     contentSecurityPolicy: contentSecurityPolicy
@@ -92,10 +92,7 @@ module.exports = function(environment) {
   }
 
   if (environment === 'production') {
-    ENV.APP.staticFilesUrl = 'http://miguatemala.redciudadana.org/static-files/';
-    ENV.googleAnalytics = {
-      webPropertyId: 'UA-101167670-1'
-    };
+    ENV.APP.staticFilesUrl = 'http://tejiendosalud.org/static-files/';
   }
 
   return ENV;
