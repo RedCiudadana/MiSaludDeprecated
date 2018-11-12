@@ -26,6 +26,20 @@ $border-radius: 5px;
 
     img {
         margin-bottom: 20px;
+        width: 60%;
+    }
+}
+
+@include media-breakpoint-up(md) {
+    .preview-hospital {
+        img {
+            margin: auto;
+            width: 80%;
+        }
+
+        button {
+            margin-top: 3.5rem;
+        }
     }
 }
 
