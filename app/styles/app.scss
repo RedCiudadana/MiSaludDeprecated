@@ -5,7 +5,7 @@ $secondary: #182047;
 $success: #00ac56;
 $warning: #f6ab40;
 $info: #26a5dc;
-$dark: #1e2b3d;
+$dark: #58595b;
 
 $navbar-color: #3a3a3a;
 
@@ -15,6 +15,20 @@ $border-radius: 5px;
 
 @import "ember-bootstrap/bootstrap";
 @import "mi-guatemala";
+
+// Paragraph
+.text-soft {
+    opacity: 0.8;
+}
+
+// Ember power select
+.ember-power-select-trigger {
+    @extend .form-control;
+
+    .ember-power-select-selected-item, .ember-power-select-placeholder {
+        padding: 0.2rem 0.75rem;
+    }
+}
 
 // Container
 .container-padding {
@@ -60,9 +74,16 @@ $border-radius: 5px;
 
 // ANIMATIONS
 
-#wrapper-slider {
+.slider {
     width: 100%;
-    height: 100%;
+    height: 120vw;
+}
+
+@include media-breakpoint-up(md) {
+    .slider {
+        width: 100%;
+        height: 42vw;
+    }
 }
 
 .ambulance {

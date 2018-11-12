@@ -1,29 +1,51 @@
 {{!-- Slider --}}
-<div id="wrapper-slider">
-  {{!-- slider --}}
-  <img
-    src="{{rootURL}}/img/slider.png"
-    alt=""
-    width="100%"
-    class="42vw"
-    id="start"
-  >
-  <img
-    src="{{rootURL}}/img/ambulance.png"
-    alt="Ambulancia"
-    class="ambulance animate-to-left"
-  >
+{{!-- En pantalla pequeña --}}
+<div
+  class="slider d-block d-md-none text-center"
+  style="background-image: url('img/slider-sm.png'); background-size: cover;">
+  <div class="container container-padding">
+    <div class="row">
+      <div class="col-10 text-center offset-1">
+        <h1 class="text-dark">Lorem ipsum</h1>
+        <p class="text-soft">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, similique doloribus, aspernatur aut recusandae.
+        </p>
+        <button class="btn btn-success rounded">
+          Más información
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+{{!-- En pantalla grande --}}
+<div
+  class="slider d-none d-md-block"
+  style="background-image: url('img/slider.png'); background-size: cover;">
+  <div class="container container-padding">
+    <div class="row">
+      <div class="col-5 text-left">
+        <h1>Lorem ipsum</h1>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores, similique doloribus, aspernatur aut recusandae
+        </p>
+        <button class="btn btn-success rounded">
+          Más información
+        </button>
+      </div>
+    </div>
+  </div>
 </div>
 {{!-- Filters and search --}}
 {{!-- Fluid light container --}}
 <div class="bg-light w-100">
   <div class="container container-padding">
     <div class="row">
-      <div class="col-8 offset-2">
+      <div class="col-10 offset-1 col-md-8 offset-md-2">
         {{#power-select
           options=options
           onchange=(action "selectProfile")
-          selected=profileSelected
+          placeholder="Buscar hospital o centro de salud."
+          class="form-control"
           as |name|
         }}
           {{name}}
