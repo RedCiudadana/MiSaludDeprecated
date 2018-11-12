@@ -6,7 +6,7 @@ export default Controller.extend({
 
   selectedValue: null,
 
-  options: ['alfa', 'omega'],
+  options: ['Departamento', 'Guatemala'],
 
   currentSelector: computed(
     'esMujer',

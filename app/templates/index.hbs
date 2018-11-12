@@ -14,25 +14,29 @@
   >
 </div>
 {{!-- Light container --}}
-<div class="container bg-light">
-  <div class="row">
-    <div class="col-10 offset-1 filters">
-      {{!-- Departamento --}}
-      {{one-way-select selectedValue
-        options=options
-        update=(action (mut selectedValue))
-        class="form-control"
-      }}
-      {{!-- Hospital/Centro de salud --}}
-      {{one-way-select selectedValue
-        options=options
-        update=(action (mut selectedValue))
-        class="form-control"
-      }}
+<div class="bg-light w-100">
+  <div class="container container-padding">
+    <div class="row">
+      <div class="col-10 offset-1 col-md-4 offset-md-2 filters">
+        {{!-- Departamento --}}
+        {{one-way-select selectedValue
+          options=options
+          update=(action (mut selectedValue))
+          class="form-control"
+        }}
+      </div>
+      <div class="col-10 offset-1 col-md-4 offset-md-0 filters">
+        {{!-- Hospital/Centro de salud --}}
+        {{one-way-select selectedValue
+          options=options
+          update=(action (mut selectedValue))
+          class="form-control"
+        }}
+      </div>
     </div>
   </div>
 </div>
 {{!-- White container --}}
-<div class="container">
+<div class="container container-padding">
   {{preview-hospital}}
 </div>

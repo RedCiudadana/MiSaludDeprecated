@@ -16,6 +16,12 @@ $border-radius: 5px;
 @import "ember-bootstrap/bootstrap";
 @import "mi-guatemala";
 
+// Container
+.container-padding {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 // Preview hospital / Portfolio
 .preview-hospital {
     padding-top: 20px;
