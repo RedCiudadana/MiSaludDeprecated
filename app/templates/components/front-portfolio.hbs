@@ -5,13 +5,15 @@
 
         <div class="image">
           {{#link-to "perfil" profile.id}}
-            <img alt={{profile.cargoNombreCompleto}} src={{profile.fotoPerfil}}>
+            <img
+              src={{profile.fotoUrl}}
+              alt={{profile.cargoNombreCompleto}}>
           {{/link-to}}
         </div>
 
         <div class="text">
           <h6>{{profile.nombre}}</h6>
-          <h6 class="font-weight-light">Cargo</h6>
+          <h6 class="font-weight-light">{{profile.cargo}}</h6>
         </div>
 
       </div>

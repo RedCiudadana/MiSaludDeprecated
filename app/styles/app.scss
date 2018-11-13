@@ -1,9 +1,9 @@
 // COLORS
 
-$primary: #163f7f;
+$primary: #27aae1;
 $secondary: #182047;
-$success: #00ac56;
-$warning: #f6ab40;
+$success: #33a86f;
+$warning: #faad42;
 $info: #26a5dc;
 $dark: #58595b;
 
@@ -151,6 +151,53 @@ $department-color-22: #711111;
   margin-top: 0.2em;
   /* bg color = bg color under block */
   background: white;
+}
+
+// Tabla de gradación
+.tabla-gradacion-content,
+.tabla-tachas-header {
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: $secondary;
+}
+
+
+.tabla-gradacion-content > .row {
+    padding: 25px 15px;
+    border-bottom: solid 1px #ddd;
+}
+
+.tabla-gradacion-content .text-container {
+    padding-left: 25px;
+    margin-top: 12px;
+}
+
+.tabla-gradacion-content .badge {
+    font-size: 14px;
+    padding: 11px 13px;
+    background-color: $info;
+    margin-top: 10px;
+}
+
+.tabla-gradacion-content .text-container {
+    padding-left: 0px;
+    margin-top: 13px;
+}
+
+.tabla-gradacion-content > .row {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+// Panel biografia
+#biografia-container {
+    background-color: #1b2b3a;
+    color: #FFFFFF;
+    margin-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 

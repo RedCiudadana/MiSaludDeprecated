@@ -61,7 +61,6 @@ export default Controller.extend({
     },
 
     selectProfile(hospital) {
-      console.log('El id es: ' + hospital.id);
     }
   }
 });

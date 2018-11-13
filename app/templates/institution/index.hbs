@@ -1,0 +1,112 @@
+<div class="row m-1 border">
+  {{!-- Imagen --}}
+  <div class="col-md-3">
+    <div class="text-center py-3">
+      <img
+        id="photo-profile"
+        src={{model.institution.urlHospital}}
+        alt={{model.institution.nombre}}
+        border="0"
+        class="img-responsive center-block"
+      >
+    </div>
+  </div>
+  {{!-- Información general --}}
+  <div class="col-md-5">
+    <div class="p-2">
+      <h6>{{model.institution.nombre}}</h6>
+      <table class="table">
+        <tbody>
+          {{#each-in model.generalInfo as |key item|}}
+            <tr>
+              <td class="p-0">
+                <small>
+                  {{#if key}}
+                    <strong>{{html-safe (humanize item.key)}}:</strong>
+                  {{/if}}
+                  {{html-safe item.value}}
+                </small>
+              </td>
+            </tr>
+          {{/each-in}}
+        </tbody>
+      </table>
+    </div>
+  </div>
+  {{!-- Información extra, redes sociales --}}
+  <div class="col-md-4 social-side text-center text-md-left d-block">
+    <div class="d-block mt-3">
+      <div>
+        <a href="mailto:{{model.institution.correo}}" target="_blank" rel="noopener">
+          <i class="fa fa-envelope mr-1"></i>
+          <small>{{model.institution.correo}}</small>
+        </a>
+      </div>
+      <div>
+        <a href={{model.institution.paginaweb}} target="_blank" rel="noopener">
+          <i class="fa fa-file mr-1"></i>
+          <small>{{model.institution.paginaweb}}</small>
+        </a>
+      </div>
+      <div>
+        <a href="https://twitter.com/{{model.institution.twitter}}" target="_blank" rel="noopener">
+          <i class="fa fa-twitter mr-1 text-tw"></i>
+          <small>{{model.institution.twitter}}</small>
+        </a>
+      </div>
+      <div>
+        <a href={{model.institution.facebook}} target="_blank" rel="noopener">
+          <i class="fa fa-facebook-square mr-1 text-fb"></i>
+          <small>{{model.institution.facebook}}</small>
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="biografia-container" class="row mx-1">
+  <div class="col-md-3 text-center">
+    <img
+      src="img/logo-libro.png"
+      class="img-responsive center"
+      style="max-width: 120px; margin-top: 20px; margin-bottom: 20px;" />
+  </div>
+  <div class="col-md-9">
+    <h5>Descripción</h5>
+    <p style="margin-bottom: 30px;" class="justify">
+      {{model.institution.descripcion}}
+    </p>
+  </div>
+</div>
+
+<div class="row">
+  {{!-- Servicios --}}
+  <div class="col-md-6">
+    <div class="perfil-container">
+      <div class="border panel">
+        <div class="header d-flex">
+            <img src="img/logo-libro.png" alt="Servicios" class="image60x60"><h3 class="my-auto mx-5">Servicios</h3>
+          </div>
+        <div class="panel-body tabla-gradacion-content">
+          {{#each model.services as |service|}}
+            <div class="row p-2">
+              <div class="col-xs-3 col-md-3 text-center icon-container">
+                <img
+                  src="img/logo-proyeccion-humana.png"
+                  class="img-responsive center"
+                  width="50px"/>
+              </div>
+              <div class="col-xs-7 col-md-9 col-md-offset-0 text-container text-left">
+                {{service.servicios}}
+              </div>
+            </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{!-- Authorities --}}
+<h6>Autoridades</h6>
+{{front-portfolio profiles=model.authorities}}

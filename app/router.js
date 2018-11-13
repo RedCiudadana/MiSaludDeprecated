@@ -39,7 +39,9 @@ Router.map(function() {
     this.route('partido', { path: '/partido/:id'});
   });
 
-  this.route('institution', { path: '/institución/:id'});
+  this.route('institution', { path: '/institution/:id'}, function() {
+    
+  });
 });
 
 export default Router;
