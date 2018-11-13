@@ -43,6 +43,7 @@
       <div class="col-10 offset-1 col-md-8 offset-md-2">
         {{#power-select
           options=model.hospitals
+          searchField="nombre"
           onchange=(action "selectProfile")
           placeholder="Buscar hospital o centro de salud."
           class="form-control"

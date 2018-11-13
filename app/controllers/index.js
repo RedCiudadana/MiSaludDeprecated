@@ -52,12 +52,6 @@ export default Controller.extend({
 
     $container.isotope({filter: this.get('currentSelector')});
 
-    // if(this.get('currentSelector') == '*') {
-    //   this.set('selectorBadges', '');
-    // } else {
-    //   this.set('selectorBadges', this.get('currentSelector').replace(/\./g , '').split(', '));
-    // }
-
     return false;
   },
 
