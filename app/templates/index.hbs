@@ -42,30 +42,30 @@
     <div class="row">
       <div class="col-10 offset-1 col-md-8 offset-md-2">
         {{#power-select
-          options=options
+          options=model.hospitals
           onchange=(action "selectProfile")
           placeholder="Buscar hospital o centro de salud."
           class="form-control"
-          as |name|
+          as |hospital|
         }}
-          {{name}}
+          {{hospital.nombre}}
         {{/power-select}}
       </div>
     </div>
     <div class="row">
       <div class="col-10 offset-1 col-md-4 offset-md-2 filters">
         {{!-- Departamento --}}
-        {{one-way-select selectedValue
-          options=options
-          update=(action (mut selectedValue))
+        {{one-way-select
+          options=departments
+          update=(queue (action (mut selectedDepartment)) (action 'applyFilter'))
           class="form-control"
         }}
       </div>
       <div class="col-10 offset-1 col-md-4 offset-md-0 filters">
         {{!-- Hospital/Centro de salud --}}
-        {{one-way-select selectedValue
-          options=options
-          update=(action (mut selectedValue))
+        {{one-way-select
+          options=types
+          update=(queue (action (mut selectedType)) (action 'applyFilter'))
           class="form-control"
         }}
       </div>

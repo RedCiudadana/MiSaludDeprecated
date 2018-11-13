@@ -1,14 +1,16 @@
 <div id="portfolio" class="portfolio">
   {{#each institutions as |institution|}}
-    <div class="row">
+    <div class="row {{institution.labels}}">
       <div class="col-10 offset-1 border preview-hospital">
         <div class="row text-center">
+
           <div class="col-12 col-md-3 image-column">
             <img
               src={{institution.urlHospital}}
               alt="Imagen de nombre hospital"
             >
           </div>
+
           <div class="col-12 col-md-6 p-auto pt-md-4 text-md-left">
             <h6>{{institution.nombre}}</h6>
             <div class="block-with-text">
@@ -20,11 +22,15 @@
               {{institution.departamento}}
             </span>
           </div>
+
           <div class="col-12 col-md-3">
-            <button class="btn btn-success">
-              Más información
-            </button>
+            {{#link-to "institution" institution.id}}
+              {{#bs-button type="success"}}
+                Más información
+              {{/bs-button}}
+            {{/link-to}}
           </div>
+
         </div>
       </div>
     </div>

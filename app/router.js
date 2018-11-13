@@ -38,6 +38,8 @@ Router.map(function() {
   this.route('partidos', function() {
     this.route('partido', { path: '/partido/:id'});
   });
+
+  this.route('institution', { path: '/institución/:id'});
 });
 
 export default Router;
