@@ -1,23 +1,32 @@
-<div class="row">
-  <div class="col-10 offset-1 border preview-hospital">
-    <div class="row text-center">
-      <div class="col-12 col-md-3">
-        <img
-          src="img/image425x425.png"
-          alt="Imagen de nombre hospital"
-        >
-      </div>
-      <div class="col-12 col-md-6 p-auto pt-md-4 text-md-left">
-        <h6>Hospital San Juan de Dios</h6>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas necessitatibus, laudantium debitis possimus.
-        </p>
-      </div>
-      <div class="col-12 col-md-3">
-        <button class="btn btn-success">
-          Más información
-        </button>
+<div id="portfolio" class="portfolio">
+  {{#each institutions as |institution|}}
+    <div class="row">
+      <div class="col-10 offset-1 border preview-hospital">
+        <div class="row text-center">
+          <div class="col-12 col-md-3 image-column">
+            <img
+              src={{institution.urlHospital}}
+              alt="Imagen de nombre hospital"
+            >
+          </div>
+          <div class="col-12 col-md-6 p-auto pt-md-4 text-md-left">
+            <h6>{{institution.nombre}}</h6>
+            <div class="block-with-text">
+              <p>
+                {{institution.descripcion}}
+              </p>
+            </div>
+            <span class="btn btn-primary text-white my-2">
+              {{institution.departamento}}
+            </span>
+          </div>
+          <div class="col-12 col-md-3">
+            <button class="btn btn-success">
+              Más información
+            </button>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
+  {{/each}}
 </div>

@@ -1,0 +1,66 @@
+[
+  {
+    "id": "cs-1",
+    "servicios": "Horario de visita"
+  },
+  {
+    "id": "cs-1",
+    "servicios": "Consulta externa de pediatria"
+  },
+  {
+    "id": "cs-1",
+    "servicios": "Consulta externa de adultos"
+  },
+  {
+    "id": "cs-1",
+    "servicios": "Consulta externa ginecología y obstetricia"
+  },
+  {
+    "id": "cs-1",
+    "servicios": "Emergencia de adultos"
+  },
+  {
+    "id": "cs-1",
+    "servicios": "Emergencia de pediatría"
+  },
+  {
+    "id": "cs-1",
+    "servicios": "Emergencia ginecoobstetricia"
+  },
+  {
+    "id": "cs-1",
+    "servicios": "Servicios de hospitalización de pacientes adultos"
+  },
+  {
+    "id": "cs-2",
+    "servicios": "Horario de visita"
+  },
+  {
+    "id": "cs-2",
+    "servicios": "Consulta externa de pediatria"
+  },
+  {
+    "id": "cs-2",
+    "servicios": "Consulta externa de adultos"
+  },
+  {
+    "id": "cs-2",
+    "servicios": "Consulta externa ginecología y obstetricia"
+  },
+  {
+    "id": "cs-2",
+    "servicios": "Emergencia de adultos"
+  },
+  {
+    "id": "cs-2",
+    "servicios": "Emergencia de pediatría"
+  },
+  {
+    "id": "cs-2",
+    "servicios": "Emergencia ginecoobstetricia"
+  },
+  {
+    "id": "cs-2",
+    "servicios": "Servicios de hospitalización de pacientes adultos"
+  }
+]

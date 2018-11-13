@@ -13,6 +13,29 @@ $footer-background-color: #202d3e;
 $footer-color: #ffffff;
 $border-radius: 5px;
 
+$department-color-1: #fff2f2;
+$department-color-2: #fed9d6;
+$department-color-3: #fdc3bb;
+$department-color-4: #fcb3a0;
+$department-color-5: #faaa86;
+$department-color-6: #f7ab6d;
+$department-color-7: #f5b557;
+$department-color-8: #f1cb42;
+$department-color-9: #edec30;
+$department-color-10: #b8e921;
+$department-color-12: #75e413;
+$department-color-12: #26de08;
+$department-color-13: #00d732;
+$department-color-14: #00cf87;
+$department-color-15: #00b3c7;
+$department-color-16: #0050bd;
+$department-color-17: #0d00b3;
+$department-color-18: #6000a9;
+$department-color-19: #9e0094;
+$department-color-20: #920044;
+$department-color-21: #870002;
+$department-color-22: #711111;
+
 @import "ember-bootstrap/bootstrap";
 @import "mi-guatemala";
 
@@ -44,17 +67,33 @@ $border-radius: 5px;
     margin-top: 20px;
     margin-bottom: 20px;
 
-    img {
-        margin-bottom: 20px;
-        width: 60%;
+    .image-column {
+        height: 100%;
+        overflow: hidden;
+        margin-bottom: 10px;
+
+        img {
+            margin-top: 25px;
+            width: 80%;
+        }
+    }
+
+
+    p {
+        height: 5rem;
     }
 }
 
 @include media-breakpoint-up(md) {
     .preview-hospital {
-        img {
-            margin: auto;
-            width: 80%;
+
+        .image-column {
+            height: 12rem;
+
+            img {
+                margin-top: 25px;
+                width: 80%;
+            }
         }
 
         button {
@@ -69,6 +108,49 @@ $border-radius: 5px;
         margin-top: 10px;
         margin-bottom: 10px;
     }
+}
+
+// Text special truncate
+// TY: http://hackingui.com/front-end/a-pure-css-solution-for-multiline-text-truncation/;
+.block-with-text {
+  /* hide text if it more than N lines  */
+  overflow: hidden;
+  /* for set '...' in absolute position */
+  position: relative; 
+  /* use this value to count block height */
+  line-height: 1.2em;
+  /* max-height = line-height (1.2) * lines max number (3) */
+  max-height: 3.7rem; 
+  /* fix problem when last visible word doesn't adjoin right side  */
+  text-align: justify;  
+  /* place for '...' */
+  margin-right: -1em;
+  padding-right: 1em;
+}
+/* create the ... */
+.block-with-text:before {
+  /* points in the end */
+  content: '...';
+  /* absolute position */
+  position: absolute;
+  /* set position to right bottom corner of block */
+  right: 0;
+  bottom: 0;
+}
+/* hide ... if we have text, which is less than or equal to max lines */
+.block-with-text:after {
+  /* points in the end */
+  content: '';
+  /* absolute position */
+  position: absolute;
+  /* set position to right bottom corner of text */
+  right: 0;
+  /* set width and height */
+  width: 1em;
+  height: 1em;
+  margin-top: 0.2em;
+  /* bg color = bg color under block */
+  background: white;
 }
 
 
