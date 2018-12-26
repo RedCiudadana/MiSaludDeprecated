@@ -20,6 +20,14 @@ export default Model.extend({
   nombre: attr('string'),
 
   /**
+   * Tipo: Hospital o Centro de salud
+   * 
+   * @property tipo
+   * @type String
+   */
+  tipo: attr('string'),
+
+  /**
    * departamento
    * 
    * @property departamento
@@ -135,11 +143,14 @@ export default Model.extend({
    * @param String departamento
    * @return String etiquetas
    */
-  labels: computed('departamento', function() {
+  labels: computed('departamento', 'tipo', function() {
     let returnValue = '';
 
     // Departamento
     returnValue += ' ' + dasherize(this.get('departamento'));
+
+    // Departamento
+    returnValue += ' ' + dasherize(this.get('tipo'));
 
     return returnValue;
   })

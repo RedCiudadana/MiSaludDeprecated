@@ -40,6 +40,8 @@ export default Controller.extend({
       // Filtra tipo
       labels.push(' .' + dasherize(this.get('selectedType')));
 
+      console.log(labels);
+
       return labels.join(', ');
     }
   ),
