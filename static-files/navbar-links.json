@@ -1,14 +1,1 @@
-[
-  {
-    "route": "perfiles",
-    "title": "Diputados"
-  },
-  {
-    "route": "perfiles",
-    "title": "¿Quién es mi representante?"
-  },
-  {
-    "route": "metodologia",
-    "title": "Metodología"
-  }
-]
+[{"route":"perfiles","title":"Diputados"},{"route":"perfiles","title":"¿Quién es mi representante?"},{"route":"metodologia","title":"Metodología"}]

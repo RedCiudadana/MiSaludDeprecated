@@ -1,12 +1,1 @@
-[
-  {
-    "field": "biografia",
-    "label": "",
-    "section": "Biografía"
-  },
-  {
-    "field": "trayectoria",
-    "label": "",
-    "section": "Trayectoria"
-  }
-]
+[{"field":"biografia","label":"","section":"Biografía"},{"field":"trayectoria","label":"","section":"Trayectoria"}]
