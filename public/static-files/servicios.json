@@ -1,66 +1,58 @@
 [
   {
     "id": "cs-1",
-    "servicios": "Horario de visita"
+    "servicios": "Emergencia adultos"
   },
   {
     "id": "cs-1",
-    "servicios": "Consulta externa de pediatria"
+    "servicios": "Emergencia Pediatría"
   },
   {
     "id": "cs-1",
-    "servicios": "Consulta externa de adultos"
+    "servicios": "Consulta externa Ginecología obstetricia"
   },
   {
     "id": "cs-1",
-    "servicios": "Consulta externa ginecología y obstetricia"
-  },
-  {
-    "id": "cs-1",
-    "servicios": "Emergencia de adultos"
-  },
-  {
-    "id": "cs-1",
-    "servicios": "Emergencia de pediatría"
-  },
-  {
-    "id": "cs-1",
-    "servicios": "Emergencia ginecoobstetricia"
-  },
-  {
-    "id": "cs-1",
-    "servicios": "Servicios de hospitalización de pacientes adultos"
+    "servicios": "Consulta externa adultos"
   },
   {
     "id": "cs-2",
-    "servicios": "Horario de visita"
+    "servicios": "Anestesia\nCirugía\nEmergencias\nEstomatología\nGinecología\nLaboratorios\nMaternidad\nMedicina Nuclear\nNeurocirugía\nMedicina\nMicrobiología\nOftalmología\nOrtopedia\nPediatría\nRayos X"
   },
   {
-    "id": "cs-2",
-    "servicios": "Consulta externa de pediatria"
+    "id": "cs-3",
+    "servicios": "Pacientes pedríatricos\nApoyo integral al paciente: Odontología, Rayos X, Laboratorio Clínico, Fisioterapia, terapia del lengua, terapia ocupacional, psiquiatrìa, piscología, medicina interna, nutrición.\nJornadas especiales: Desintometrìa ósea, oftalmología. \nSubespecialidades: cirugía de columna, cirugía de pie y tobillo, cirugìa de astroplastias de rodillas y cadera, cirugía plástica. "
   },
   {
-    "id": "cs-2",
-    "servicios": "Consulta externa de adultos"
+    "id": "cs-4",
+    "servicios": "Consulta externa: Nefrología, cardiología, endocrinología neurología, neumologìaz, oncología, cardiología (niños y adultos), reumatologìa, dermatologìa, nutrición, psicología, Clínica del VIH, artroscopía, maxilofacial,  ginecología, plan canguro, pediateía, traumatología, hipodermia, clìnica de venas, gastroenterologìa (niños y adultos), inmunizaciones, cirugìa general, cirugía plástica, neurocirugía, columna, urología, colon y recto. \nServicios de Ginecoobstetricia: Labor y partos, sala de post-parto, planificación familiar.\nServicios de traumatología y ortopedia: Traumatología de hombres, traumatologìa de mujeres, traumatología pedríatrica, traumatología emergencia, aetroscopia, cirigía de columna. \nServicios en la Emergencia: Triage, medicina, pediatría, cirugía, traumatología, gineco-obstetricia, área de shock, sala de aislamiento.\n"
   },
   {
-    "id": "cs-2",
-    "servicios": "Consulta externa ginecología y obstetricia"
+    "id": "cs-5",
+    "servicios": "¿?"
   },
   {
-    "id": "cs-2",
-    "servicios": "Emergencia de adultos"
+    "id": "cs-6",
+    "servicios": "Medicina interna, gineco-obstetricia, traumatología, cirugía general, pediatría y neurología"
   },
   {
-    "id": "cs-2",
-    "servicios": "Emergencia de pediatría"
+    "id": "cs-7",
+    "servicios": "¿?"
   },
   {
-    "id": "cs-2",
-    "servicios": "Emergencia ginecoobstetricia"
+    "id": "cs-8",
+    "servicios": "¿?"
   },
   {
-    "id": "cs-2",
-    "servicios": "Servicios de hospitalización de pacientes adultos"
+    "id": "cs-9",
+    "servicios": "¿?"
+  },
+  {
+    "id": "cs-10",
+    "servicios": "¿?"
+  },
+  {
+    "id": "cs-11",
+    "servicios": "¿?"
   }
 ]

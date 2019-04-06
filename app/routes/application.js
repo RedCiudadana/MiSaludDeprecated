@@ -36,6 +36,9 @@ export default Route.extend({
   beforeModel() {
     const spreadsheetService = this.get('spreadsheets');
 
+      console.log('Hola julito');
+      console.log(config.APP.dataSpreadsheetSourceUrl);
+
     return this.get('ajax')
       // Obtiene dataSpreadsheetSourceUrl de las configuraciones
       .request(config.APP.dataSpreadsheetSourceUrl, { dataType: 'text' })

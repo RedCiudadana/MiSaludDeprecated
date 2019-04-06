@@ -65,6 +65,8 @@ export default Service.extend({
     // Si config.APP.staticFilesUrl está definido, obtener la data de allí, independiente
     // del spreadsheetKey
     if (!isNone(config.APP.staticFilesUrl)) {
+      console.log('Modo estático');
+      console.log(config.APP.staticFilesUrl);
       return this.get('ajax')
         .request(config.APP.staticFilesUrl + worksheetName + '.json')
         .then((response) => {
@@ -81,6 +83,7 @@ export default Service.extend({
      *  MODO 'LIVE'
      *
      */
+     console.log('Modo live');
     return new Promise((resolve) => {
 
       let spreadsheetUrl = this.get('dataSpreadsheetUrl');
